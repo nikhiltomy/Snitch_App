@@ -35,6 +35,15 @@
       />
     </LazyHydrate>
 
+
+    <LazyHydrate when-visible>
+      <RelatedProducts1
+        :products="products"
+        :loading="productsLoading"
+        title="Match it with"
+      />
+    </LazyHydrate>
+    <MostLoved></MostLoved>
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>
       <SfCallToAction
@@ -64,6 +73,8 @@ import {
   SfButton,
 } from "@storefront-ui/vue";
 import RelatedProducts from "~/components/RelatedProducts.vue";
+import RelatedProducts1 from "~/components/RelatedProducts1.vue";
+import MostLoved from '~/components/MostLoved.vue';
 import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
@@ -106,6 +117,7 @@ export default {
   components: {
     SfHero,
     RelatedProducts,
+    RelatedProducts1,
     SfBanner,
     SfCallToAction,
     SfSection,
@@ -118,6 +130,7 @@ export default {
     MobileStoreBanner,
     LazyHydrate,
     CardContainer,
+    MostLoved
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -234,7 +247,7 @@ export default {
     },
   },
   mounted() {
-    console.log(this.categoriesList);
+    // console.log(this.categoriesList);
   },
 };
 </script>

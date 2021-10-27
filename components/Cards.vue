@@ -10,9 +10,6 @@
 <script>
 export default {
   props: ["list"],
-  mounted() {
-    console.log(this.list);
-  },
 };
 </script>
 <style scoped>

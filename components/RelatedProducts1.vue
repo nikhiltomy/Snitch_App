@@ -3,14 +3,14 @@
     <SfLoader :class="{ loading }" :loading="loading">
       <SfCarousel
         data-cy="related-products-carousel"
-        :settings="pdpUpsellSettings"
+        :settings="pdpUpsellSettings" 
         class="carousel"
         ref="bscarousel"
       >
         <SfCarouselItem class="carousel__item" v-for="(product, i) in products" :key="i">
           <SfProductCard
             :title="productGetters.getName(product)"
-            :image="productGetters.getPDPCoverImage(product, 'medium')"
+            :image="productGetters.getCoverImage(product)"
             :link="localePath(`/p/${productGetters.getId(product)}/${productGetters.getSlug(product)}`)"
             :wishlistIcon="false"
             :imageWidth="295"
@@ -78,6 +78,10 @@ export default {
     title: String,
     products: Array,
     loading: Boolean
+  },
+  mounted(){
+    console.log(this.products);
+    console.log('hiii')
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data () {
