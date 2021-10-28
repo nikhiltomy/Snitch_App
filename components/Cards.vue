@@ -15,7 +15,7 @@ export default {
 <style scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-columns: 120px 120px 120px 120px;
   grid-gap: 10px;
 
   padding: 10px;
@@ -28,8 +28,8 @@ export default {
 }
 
 .item {
-  width: 290px;
-  height: 350px;
+  width: 340px;
+  height: 369px;
   vertical-align: middle;
   background-size: cover;
 }
@@ -47,8 +47,25 @@ h1 {
   vertical-align: bottom;
   position: relative;
   top: 90%;
+  /* left: 45%; */
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
+}
+
+@media only screen and (max-width: 500px) {
+ .item {
+  width: 140px;
+  height: 145px;
+  vertical-align: middle;
+  background-size: cover;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 120px;
+  grid-gap: 10px;
+
+  padding: 10px;
+}
 }
 </style>

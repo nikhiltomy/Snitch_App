@@ -19,7 +19,7 @@
     </template>
 
     <template #navigation v-if="categories.length > 0">
-      <SfHeaderNavigationItem v-for='cat in categories' :key="cat.id" class="nav-item" :data-cy="'app-header-url_' + cat.handle"  :label="cat.title" :link="localePath('/c/' + cat.handle )" />
+      <!-- <SfHeaderNavigationItem v-for='cat in categories' :key="cat.id" class="nav-item" :data-cy="'app-header-url_' + cat.handle"  :label="cat.title" :link="localePath('/c/' + cat.handle )" /> -->
     </template>
     <template #aside>
       <LocaleSelector class="smartphone-only" />
@@ -125,7 +125,6 @@ export default {
       height: 100%;
   }
 }
-
 .nav-item {
   --header-navigation-item-margin: 0 var(--spacer-base);
 }

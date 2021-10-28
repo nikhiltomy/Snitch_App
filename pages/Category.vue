@@ -299,6 +299,7 @@ import {
   SfProperty
 } from '@storefront-ui/vue';
 import { computed, onMounted } from '@vue/composition-api';
+
 import {
   useCart,
   useWishlist,
@@ -350,6 +351,7 @@ export default {
 
     onMounted(() => {
       context.root.$scrollTo(context.root.$el, 2000);
+      console.log(products)
     });
 
     return {

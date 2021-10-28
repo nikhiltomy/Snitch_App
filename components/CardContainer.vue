@@ -25,5 +25,23 @@ h2 {
 }
 .discover {
   background-color: #f3f4f9;
+  padding: 0% 8% 0% 8%;
+  text-align: center;
+ 
+}
+
+@media only screen and (max-width: 768px) {
+
+.discover {
+  background-color: #f3f4f9;
+  padding: 0% 0% 0% 0%;
+  text-align: center;
+ 
+}
+
 }
 </style>
+
+// padding: 0% 10% 0% 10%;
+//     align-items: center;
+//     text-align: center;

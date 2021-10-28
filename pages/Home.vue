@@ -36,13 +36,6 @@
     </LazyHydrate>
 
 
-    <LazyHydrate when-visible>
-      <RelatedProducts1
-        :products="products"
-        :loading="productsLoading"
-        title="Match it with"
-      />
-    </LazyHydrate>
     <MostLoved></MostLoved>
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>

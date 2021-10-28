@@ -80,8 +80,8 @@ export default {
     loading: Boolean
   },
   mounted(){
-    console.log(this.products);
-    console.log('hiii')
+    // console.log(this.products);
+    // console.log('hiii')
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data () {

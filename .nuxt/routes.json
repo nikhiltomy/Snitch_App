@@ -3,7 +3,8 @@
     "name": "Category___en",
     "path": "/Category",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
+    "chunkName": "pages/Category",
+    "_name": "_1914d340"
   },
   {
     "name": "checkout___en",
@@ -13,24 +14,29 @@
       {
         "path": "billing",
         "name": "billing___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue",
+        "_name": "_3abdc0f7"
       },
       {
         "path": "payment",
         "name": "payment___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue",
+        "_name": "_4d25d9fc"
       },
       {
         "path": "shipping",
         "name": "shipping___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue",
+        "_name": "_5cb49462"
       },
       {
         "path": "thank-you",
         "name": "thank-you___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue",
+        "_name": "_46426009"
       }
-    ]
+    ],
+    "_name": "_00959df8"
   },
   {
     "name": "Checkout___en",
@@ -42,44 +48,52 @@
         "name": "Checkout-Billing___en",
         "path": "Billing",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
+        "chunkName": "pages/Checkout/Billing",
+        "_name": "_2d10cd03"
       },
       {
         "name": "Checkout-Payment___en",
         "path": "Payment",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
+        "chunkName": "pages/Checkout/Payment",
+        "_name": "_687fc1e4"
       },
       {
         "name": "Checkout-Shipping___en",
         "path": "Shipping",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
+        "chunkName": "pages/Checkout/Shipping",
+        "_name": "_9679ec54"
       },
       {
         "name": "Checkout-ThankYou___en",
         "path": "ThankYou",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
+        "chunkName": "pages/Checkout/ThankYou",
+        "_name": "_c35e5506"
       }
-    ]
+    ],
+    "_name": "_56dbff88"
   },
   {
     "name": "ContactUs___en",
     "path": "/ContactUs",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
+    "chunkName": "pages/ContactUs",
+    "_name": "_200efd0c"
   },
   {
     "name": "home___de",
     "path": "/de",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue",
+    "_name": "_a05723de"
   },
   {
     "name": "Home___en",
     "path": "/Home",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
+    "chunkName": "pages/Home",
+    "_name": "_632a17a1"
   },
   {
     "name": "MyAccount___en",
@@ -91,74 +105,87 @@
         "name": "MyAccount-AdressBook___en",
         "path": "AdressBook",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
+        "chunkName": "pages/MyAccount/AdressBook",
+        "_name": "_0b08ffae"
       },
       {
         "name": "MyAccount-BillingDetails___en",
         "path": "BillingDetails",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
+        "chunkName": "pages/MyAccount/BillingDetails",
+        "_name": "_1bbc0cf6"
       },
       {
         "name": "MyAccount-LoyaltyCard___en",
         "path": "LoyaltyCard",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
+        "chunkName": "pages/MyAccount/LoyaltyCard",
+        "_name": "_5a1668d7"
       },
       {
         "name": "MyAccount-MyNewsletter___en",
         "path": "MyNewsletter",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
+        "chunkName": "pages/MyAccount/MyNewsletter",
+        "_name": "_449487f4"
       },
       {
         "name": "MyAccount-MyProfile___en",
         "path": "MyProfile",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
+        "chunkName": "pages/MyAccount/MyProfile",
+        "_name": "_0c83357e"
       },
       {
         "name": "MyAccount-MyReviews___en",
         "path": "MyReviews",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
+        "chunkName": "pages/MyAccount/MyReviews",
+        "_name": "_540616f0"
       },
       {
         "name": "MyAccount-OrderHistory___en",
         "path": "OrderHistory",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
+        "chunkName": "pages/MyAccount/OrderHistory",
+        "_name": "_1fd9a955"
       },
       {
         "name": "MyAccount-ShippingDetails___en",
         "path": "ShippingDetails",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
+        "chunkName": "pages/MyAccount/ShippingDetails",
+        "_name": "_0ba0f995"
       }
-    ]
+    ],
+    "_name": "_808390e2"
   },
   {
     "name": "Product___en",
     "path": "/Product",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
+    "chunkName": "pages/Product",
+    "_name": "_a1733fc6"
   },
   {
     "name": "reset-password___en",
     "path": "/reset-password",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue",
+    "_name": "_fb94ec70"
   },
   {
     "name": "ResetPassword___en",
     "path": "/ResetPassword",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
+    "chunkName": "pages/ResetPassword",
+    "_name": "_b904bb90"
   },
   {
     "name": "Category___de",
     "path": "/de/Category",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
+    "chunkName": "pages/Category",
+    "_name": "_1914d340"
   },
   {
     "name": "checkout___de",
@@ -168,24 +195,29 @@
       {
         "path": "billing",
         "name": "billing___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue",
+        "_name": "_3abdc0f7"
       },
       {
         "path": "payment",
         "name": "payment___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue",
+        "_name": "_4d25d9fc"
       },
       {
         "path": "shipping",
         "name": "shipping___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue",
+        "_name": "_5cb49462"
       },
       {
         "path": "thank-you",
         "name": "thank-you___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue",
+        "_name": "_46426009"
       }
-    ]
+    ],
+    "_name": "_00959df8"
   },
   {
     "name": "Checkout___de",
@@ -197,39 +229,46 @@
         "name": "Checkout-Billing___de",
         "path": "Billing",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
+        "chunkName": "pages/Checkout/Billing",
+        "_name": "_2d10cd03"
       },
       {
         "name": "Checkout-Payment___de",
         "path": "Payment",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
+        "chunkName": "pages/Checkout/Payment",
+        "_name": "_687fc1e4"
       },
       {
         "name": "Checkout-Shipping___de",
         "path": "Shipping",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
+        "chunkName": "pages/Checkout/Shipping",
+        "_name": "_9679ec54"
       },
       {
         "name": "Checkout-ThankYou___de",
         "path": "ThankYou",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
+        "chunkName": "pages/Checkout/ThankYou",
+        "_name": "_c35e5506"
       }
-    ]
+    ],
+    "_name": "_56dbff88"
   },
   {
     "name": "ContactUs___de",
     "path": "/de/ContactUs",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
+    "chunkName": "pages/ContactUs",
+    "_name": "_200efd0c"
   },
   {
     "name": "Home___de",
     "path": "/de/Home",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
+    "chunkName": "pages/Home",
+    "_name": "_632a17a1"
   },
   {
     "name": "MyAccount___de",
@@ -241,102 +280,121 @@
         "name": "MyAccount-AdressBook___de",
         "path": "AdressBook",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
+        "chunkName": "pages/MyAccount/AdressBook",
+        "_name": "_0b08ffae"
       },
       {
         "name": "MyAccount-BillingDetails___de",
         "path": "BillingDetails",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
+        "chunkName": "pages/MyAccount/BillingDetails",
+        "_name": "_1bbc0cf6"
       },
       {
         "name": "MyAccount-LoyaltyCard___de",
         "path": "LoyaltyCard",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
+        "chunkName": "pages/MyAccount/LoyaltyCard",
+        "_name": "_5a1668d7"
       },
       {
         "name": "MyAccount-MyNewsletter___de",
         "path": "MyNewsletter",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
+        "chunkName": "pages/MyAccount/MyNewsletter",
+        "_name": "_449487f4"
       },
       {
         "name": "MyAccount-MyProfile___de",
         "path": "MyProfile",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
+        "chunkName": "pages/MyAccount/MyProfile",
+        "_name": "_0c83357e"
       },
       {
         "name": "MyAccount-MyReviews___de",
         "path": "MyReviews",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
+        "chunkName": "pages/MyAccount/MyReviews",
+        "_name": "_540616f0"
       },
       {
         "name": "MyAccount-OrderHistory___de",
         "path": "OrderHistory",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
+        "chunkName": "pages/MyAccount/OrderHistory",
+        "_name": "_1fd9a955"
       },
       {
         "name": "MyAccount-ShippingDetails___de",
         "path": "ShippingDetails",
         "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
+        "chunkName": "pages/MyAccount/ShippingDetails",
+        "_name": "_0ba0f995"
       }
-    ]
+    ],
+    "_name": "_808390e2"
   },
   {
     "name": "Product___de",
     "path": "/de/Product",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
+    "chunkName": "pages/Product",
+    "_name": "_a1733fc6"
   },
   {
     "name": "reset-password___de",
     "path": "/de/reset-password",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue",
+    "_name": "_fb94ec70"
   },
   {
     "name": "ResetPassword___de",
     "path": "/de/ResetPassword",
     "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
+    "chunkName": "pages/ResetPassword",
+    "_name": "_b904bb90"
   },
   {
     "name": "my-account___de",
     "path": "/de/my-account/:pageName?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue",
+    "_name": "_4d38671f"
   },
   {
     "name": "product___de",
     "path": "/de/p/:id/:slug",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue",
+    "_name": "_51a733ad"
   },
   {
     "name": "category___de",
     "path": "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue",
+    "_name": "_7a631ca0"
   },
   {
     "name": "my-account___en",
     "path": "/my-account/:pageName?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue",
+    "_name": "_4d38671f"
   },
   {
     "name": "product___en",
     "path": "/p/:id/:slug",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue",
+    "_name": "_51a733ad"
   },
   {
     "name": "category___en",
     "path": "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue",
+    "_name": "_7a631ca0"
   },
   {
     "name": "home___en",
     "path": "/",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue"
+    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue",
+    "_name": "_a05723de"
   }
 ]
