@@ -1,32 +1,8 @@
 <template>
   <div id="home">
-    <SfHero class="hero">
-      <SfHeroItem
-        v-for="(hero, i) in heroes"
-        :key="i"
-        :title="hero.title"
-        :subtitle="hero.subtitle"
-        :button-text="hero.buttonText"
-        :background="hero.background"
-        :image="hero.image"
-        :class="hero.className"
-      />
-    </SfHero>
-    <LazyHydrate when-visible>
-      <SfBannerGrid :banner-grid="1" class="banner-grid">
-        <template v-for="item in banners" v-slot:[item.slot]>
-          <SfBanner
-            :key="item.slot"
-            :title="item.title"
-            :subtitle="item.subtitle"
-            :description="item.description"
-            :button-text="item.buttonText"
-            :image="item.image"
-            :class="item.class"
-          />
-        </template>
-      </SfBannerGrid>
-    </LazyHydrate>
+    <CarouselBanner></CarouselBanner>
+    
+  
     <LazyHydrate when-visible>
       <RelatedProducts
         :products="products"
@@ -35,21 +11,12 @@
       />
     </LazyHydrate>
 
-
+    <Banner></Banner>
     <MostLoved></MostLoved>
     <CardContainer :categoriesList="categoriesList"></CardContainer>
-    <LazyHydrate when-visible>
-      <SfCallToAction
-        title="Subscribe to Newsletters"
-        button-text="Subscribe"
-        description="Be aware of upcoming sales and events. Receive gifts and special offers!"
-        image="https://cdn.shopify.com/s/files/1/0407/1902/4288/files/newsletter_1240x202.jpg?v=1616496568"
-        class="call-to-action"
-      />
-    </LazyHydrate>
-    <LazyHydrate when-visible>
-      <MobileStoreBanner />
-    </LazyHydrate>
+    
+    
+    <lower-banner></lower-banner>
   </div>
 </template>
 <script type="module">
@@ -65,6 +32,9 @@ import {
   SfArrow,
   SfButton,
 } from "@storefront-ui/vue";
+import CarouselBanner from '~/components/CarouselBanner.vue';
+import Banner from "~/components/Banner.vue";
+import LowerBanner from "~/components/LowerBanner.vue";
 import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
 import MostLoved from '~/components/MostLoved.vue';
@@ -123,7 +93,10 @@ export default {
     MobileStoreBanner,
     LazyHydrate,
     CardContainer,
-    MostLoved
+    MostLoved,
+    CarouselBanner,
+    LowerBanner,
+    Banner
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -245,7 +218,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+.sf-hero__control--left, .sf-hero__control--right{
+  display:none
+}
 .article-meta h4 a {
   color: #111111;
   font-weight: 600;

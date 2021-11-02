@@ -14,7 +14,7 @@
     <!-- TODO: add mobile view buttons after SFUI team PR -->
     <template #logo>
       <nuxt-link data-cy="app-header-url_logo" :to="localePath('/')" class="sf-header__logo">
-        <img src="/icon.png" alt="Vue Storefront Next" width="34" height="35" class="sf-header__logo-image"/>
+        <img src="https://res.cloudinary.com/dafnqo9go/image/upload/v1635403702/snitch/logo.png" alt="Vue Storefront Next" width="34" height="35" class="sf-header__logo-image"/>
       </nuxt-link>
     </template>
 
@@ -125,6 +125,7 @@ export default {
       height: 100%;
   }
 }
+
 .nav-item {
   --header-navigation-item-margin: 0 var(--spacer-base);
 }

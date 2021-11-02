@@ -2,12 +2,13 @@
   <div id="cart">
     <SfSidebar
       :visible="isCartSidebarOpen"
-      title="Shopping Bag"
+      title="Cart"
       :subtitle="`${totalItems} items`"
       class="sf-sidebar--right"
       @close="toggleCartSidebar"
       :persistent="true"
     >
+    <p>Your cart is currently empty</p>
       <template #bar>
         <div></div>
       </template>
@@ -126,18 +127,26 @@
         </div>
         <div v-else key="empty-cart" class="empty-cart">
           <div class="empty-cart__banner">
-            <SfImage
+
+            <!-- <SfImage
               alt="Empty bag"
               class="empty-cart__image"
               src="/icons/empty-cart.svg"
-            />
-            <SfHeading
+            /> -->
+            <!-- <SfHeading
               title="Woops! your cart is empty"
               :level="2"
               class="empty-cart__heading"
               description="Looks like you haven’t added any items to the bag yet. Start
               shopping to fill it in."
-            />
+            /> -->
+            <!-- <SfHeading
+              title="Woops! your cart is empty"
+              :level="2"
+              class="empty-cart__heading"
+              description="Looks like you haven’t added any items to the bag yet. Start
+              shopping to fill it in."
+            /> -->
           </div>
         </div>
       </transition>
@@ -183,11 +192,11 @@
             </SfLink>
           </div>
           <div v-else>
-            <SfButton
+            <!-- <SfButton
               class="sf-button--full-width color-primary"
               @click="toggleCartSidebar"
               >Continue Shopping</SfButton
-            >
+            > -->
           </div>
         </transition>
       </template>
@@ -327,7 +336,7 @@ export default {
   }
   .sf-sidebar__aside {
     @include for-desktop {
-      width: 600px;
+      width: 380px;
       box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
     }
     @include for-mobile {

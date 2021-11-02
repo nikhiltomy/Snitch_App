@@ -1,14 +1,18 @@
 <template>
   <div>
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <TopBar class="desktop-only" />
-    </LazyHydrate>
-    <LazyHydrate when-idle>
+    </LazyHydrate> -->
+    <!-- <LazyHydrate when-idle>
       <AppHeader />
+    </LazyHydrate> -->
+
+    <LazyHydrate when-idle>
+      <TheHeader ></TheHeader>
     </LazyHydrate>
 
     <div id="layout">
-      <nuxt :key="$route.fullPath"/>
+      <nuxt :key="$route.fullPath" />
 
       <LazyHydrate when-visible>
         <BottomNavigation />
@@ -25,30 +29,32 @@
 </template>
 
 <script>
-import AppHeader from '~/components/AppHeader.vue';
-import BottomNavigation from '~/components/BottomNavigation.vue';
-import AppFooter from '~/components/AppFooter.vue';
-import TopBar from '~/components/TopBar.vue';
-import CartSidebar from '~/components/CartSidebar.vue';
-import WishlistSidebar from '~/components/WishlistSidebar.vue';
-import LoginModal from '~/components/LoginModal.vue';
-import LazyHydrate from 'vue-lazy-hydration';
-import Notification from '~/components/Notification';
+import TheHeader from "~/components/TheHeader.vue";
+import AppHeader from "~/components/AppHeader.vue";
+import BottomNavigation from "~/components/BottomNavigation.vue";
+import AppFooter from "~/components/AppFooter.vue";
+import TopBar from "~/components/TopBar.vue";
+import CartSidebar from "~/components/CartSidebar.vue";
+import WishlistSidebar from "~/components/WishlistSidebar.vue";
+import LoginModal from "~/components/LoginModal.vue";
+import LazyHydrate from "vue-lazy-hydration";
+import Notification from "~/components/Notification";
 
 export default {
-  name: 'DefaultLayout',
+  name: "DefaultLayout",
 
   components: {
     LazyHydrate,
     TopBar,
     AppHeader,
+    TheHeader,
     BottomNavigation,
     AppFooter,
     CartSidebar,
     WishlistSidebar,
     LoginModal,
-    Notification
-  }
+    Notification,
+  },
 };
 </script>
 
