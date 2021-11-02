@@ -1,5 +1,8 @@
 <template>
   <div id="home">
+    <div class="image_process">
+   <img src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635776527/NewV/BUY_3_GET_FLAT_15_OFF_Use_code_BUY3_1897_x_300_px_1600x.jpg" alt="" style="max-width:100%" >
+  </div>  
     <CarouselBanner></CarouselBanner>
     
   
@@ -12,7 +15,7 @@
     </LazyHydrate>
 
     <Banner></Banner>
-    <MostLoved></MostLoved>
+    <!-- <MostLoved></MostLoved> -->
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     
     
@@ -339,5 +342,14 @@ export default {
       --product-card-add-button-transform: translate3d(0, 30%, 0);
     }
   }
+}
+/// v style
+.image_process{
+  height: 160px;
+}
+@media only screen and (max-width: 600px){
+.image_process{
+  height:20px;
+}
 }
 </style>

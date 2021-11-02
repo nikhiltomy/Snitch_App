@@ -46,7 +46,7 @@ h1 {
   font-size: 18px;
   vertical-align: bottom;
   position: relative;
-  top: 90%;
+  top: 86%;
   /* left: 45%; */
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

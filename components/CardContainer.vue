@@ -42,6 +42,3 @@ h2 {
 }
 </style>
 
-// padding: 0% 10% 0% 10%;
-//     align-items: center;
-//     text-align: center;

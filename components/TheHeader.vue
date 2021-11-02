@@ -3,7 +3,7 @@
     <div id="container" v-if="searchbarActive==false">
       <div>
         <div class="list" v-on:click="isActive = true">
-          <span class="sf-icon color-white size-sm">
+          <span class="sf-icon color-white size-xs">
             <svg
               class="sf-icon-path"
               viewBox="0 0 24 24"
@@ -24,7 +24,7 @@
         />
       </div>
       <div>
-        <div class="icons"  @click="handleAccountClick">
+        <div class="icons hidden-desktop"  @click="handleAccountClick">
           <span class="sf-icon color-white size-sm">
             <svg
               class="sf-icon-path"
@@ -108,12 +108,12 @@
         </span>
       </div>
       <TheDropdown></TheDropdown>
-      <a href="#about">SNITCH PLUS</a>
-      <a href="#services">SNITCH LUXE</a>
-      <a href="#clients">BULK ORDER</a>
-      <a href="#contact">Place Return/Exchange Request</a>
-      <a href="#contact">Track Order</a>
-      <a href="#contact">DOWNLOAD APP</a>
+      <a class="navContent" href="#about">SNITCH PLUS</a>
+      <a class="navContent" href="#services">SNITCH LUXE</a>
+      <a class="navContent" href="#clients">BULK ORDER</a>
+      <a class="navContent" href="#contact">Place Return/Exchange <br> Request</a>
+      <a class="navContent" href="#contact">Track Order</a>
+      <a class="navContent" href="#contact">DOWNLOAD APP</a>
     </div>
   </div>
 </template>
@@ -173,6 +173,11 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
   display: block;
   padding: 20px 0px;
 }
+.navContent{
+  border: 1px solid #F5F5F5 !important;
+  padding-top: 15px !important;
+  scroll-padding-bottom: 15px;
+}
 /* .dropdown-btn {
   display: block;
   font-size: 1.5rem;
@@ -203,7 +208,6 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
 #container > div {
   width: 210px;
   height: 100px;
-  border: 2px dashed red;
   text-align: center;
   padding-top: 25px;
 }
@@ -216,9 +220,9 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
   width: 280px;
   position: fixed;
   z-index: 1;
-  top: 25px;
+  top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 40px;
   padding-right: 20px;
@@ -229,9 +233,10 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 17px;
+  color: #262626;
   display: block;
+  font-weight: 500;
   border: none;
   background: none;
   width: 100%;
@@ -280,5 +285,29 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
   .sidenav a {
     font-size: 18px;
   }
+}
+@media (max-width:480px)  {
+
+#container > div {
+  width: 115px;
+  height: 100px;
+  text-align: center;
+  padding-top: 25px;
+}
+.icons {
+  float: left;
+  padding: 25px 2px;
+}
+.hidden-desktop{
+  display: none;
+}
+.list {
+  width: 200px;
+  height: 100px;
+  float:left;
+  text-align: center;
+  padding-top: 25px;
+ padding-left: 15px;
+}
 }
 </style>

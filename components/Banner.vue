@@ -9,7 +9,8 @@
       buttonText=""
       link=""
       background=""
-      :image="images.link"
+      :image="images.image"
+   
     />
   </div>
 </template>
@@ -25,13 +26,14 @@ export default {
     return {
       imagesArray: [
         {
-          link: "https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635309983/NewV/Luxe_3_1_1600x.png",
+          image:"https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635844308/NewV/new/123.png",
+          
         },
+        
         {
-          link: "https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635309983/NewV/IMG-7719_1600x.png",
-        },
-        {
-          link: "https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635309983/NewV/Snitch-Plus2_1600x.png",
+          image:"https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635844308/NewV/new/456.png",
+          
+          
         },
       ],
     };
@@ -41,6 +43,25 @@ export default {
 <style  scoped>
 .displaygrid {
   display: grid;
-  grid-row-gap: 70px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 60px;
+}
+.sf-banner{
+  min-height: var(--banner-height, 30rem);
+}
+
+@media only screen and (max-width: 600px){
+.sf-banner{
+  background-size:contain;
+   background-position: center
+  
+  }
+  .displaygrid {
+   display:flex;
+   flex-direction: column;
+  }
+  .sf-banner{
+  min-height: var(--banner-height, 7rem);
+}
 }
 </style>

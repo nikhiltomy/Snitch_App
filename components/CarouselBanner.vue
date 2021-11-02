@@ -1,8 +1,5 @@
 <template>
 <div>
-<div style="height:0;padding-bottom:10%;" class="img_mobile">
-<img   alt="" src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635776527/NewV/BUY_3_GET_FLAT_15_OFF_Use_code_BUY3_1897_x_300_px_1600x.jpg">
-</div>
   <SfHero class="hero">
       <SfHeroItem
         v-for="(hero, i) in heroes"
@@ -71,9 +68,13 @@ export default {
    .sf-hero__bullets{
      display: none;
    }
+   .img_mobile{
+     text-align: center;
+   }
    @include for-desktop {
       .sf-hero-item__wrapper{
-         min-height: 63.625rem;
+         min-height: 53.625rem;
+         background-size:contain;
       }
 
      .img_mobile{

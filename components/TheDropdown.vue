@@ -21,7 +21,7 @@
         v-bind:class="{ drpactive: dropdownActive }"
       >
         
-        <TheInnerDropdown></TheInnerDropdown>
+        <TheInnerDropdown v-for="cat in categoriesNav" :key="cat.id" :cat="cat"></TheInnerDropdown>
        
       </div>
     </div>
@@ -55,6 +55,9 @@ export default {
             dropdownActive: false,
         }
     },
+    mounted(){
+      console.log(this.categoriesNav)
+    }
 }
 </script>
 <style scoped>
@@ -71,7 +74,7 @@ export default {
   z-index: 1;
   top: 25px;
   left: 0;
-  background-color: #111;
+  background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 40px;
   padding-right: 20px;
@@ -82,9 +85,10 @@ export default {
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 17px;
+  color: #262626;
   display: block;
+  font-weight: 600;
   border: none;
   background: none;
   width: 100%;
@@ -115,7 +119,7 @@ export default {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #ffffff;
   padding-left: 8px;
 }
 
