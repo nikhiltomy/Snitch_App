@@ -2,13 +2,9 @@
   <div>
     <h2>MOST LOVED 🖤</h2>
     <div class="container">
-      <SfProductCard
-        imageWidth="100%"
-        imageHeight="auto"
-        data-cy="category-product-card"
+      <Pcard
         v-for="(product, i) in products"
         :key="productGetters.getId(product)"
-        :style="{ '--index': i }"
         :title="productGetters.getName(product)"
         :image="productGetters.getCoverImage(product)"
         :regular-price="
@@ -25,10 +21,7 @@
             )}`
           )
         "
-        class="products__product-card"
-        @click:wishlist="addItemToWishlist({ product })"
-        @click:add-to-cart="HandleAddTocart({ product, quantity: 1 })"
-      />
+      ></Pcard>
     </div>
   </div>
 </template>
@@ -38,12 +31,13 @@ import {
   useFacet,
   facetGetters,
 } from "@vue-storefront/shopify";
-import { SfProductCard } from "@storefront-ui/vue";
+
 import { computed, onMounted } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
+import Pcard from '~/components/Pcard.vue';
 export default {
   components: {
-    SfProductCard,
+   Pcard,
   },
   setup() {
     const { result, search, loading } = useFacet();

@@ -2,7 +2,7 @@
     <div>
         <button class="dropdown-btn" @click="dropdownActive = !dropdownActive">
         SHOP
-        <span class="sf-icon color-black size-xs" style="float:right">
+        <span class="sf-icon color-black size-xs" style="float:right;border-left:1px solid #F5F5F5;padding-left:5px">
           <svg
             class="sf-icon-path"
             viewBox="0 0 24 24"

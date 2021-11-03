@@ -61,8 +61,8 @@
             <template
               v-if="
                 productGetters.getPrice(product).special &&
-                parseFloat(productGetters.getPrice(product).special) <
-                  parseFloat(productGetters.getPrice(product).regular)
+                  parseFloat(productGetters.getPrice(product).special) <
+                    parseFloat(productGetters.getPrice(product).regular)
               "
             >
               <SfPrice
@@ -83,8 +83,8 @@
               "
               v-else-if="
                 productGetters.getPrice(product).special &&
-                parseFloat(productGetters.getPrice(product).special) >
-                  parseFloat(productGetters.getPrice(product).regular)
+                  parseFloat(productGetters.getPrice(product).special) >
+                    parseFloat(productGetters.getPrice(product).regular)
               "
             />
             <SfPrice
@@ -112,7 +112,9 @@
                 @input="(o) => updateFilter({ [atttLbl]: o })"
                 :value="configuration[o] || options[o][0].value"
                 :label="$t(`${o}`)"
-                :class="`sf-select--underlined product__select-${o.toLowerCase()}`"
+                :class="
+                  `sf-select--underlined product__select-${o.toLowerCase()}`
+                "
                 :required="true"
               >
                 <SfSelectOption
@@ -160,12 +162,24 @@
             v-if="productGetters.getStockStatus(product) === true"
           >
             <template #add-to-cart-btn>
+              <SfLink
+                @click="handleCheckout(checkoutURL)"
+                link="javascript:void(0);"
+              >
+                <SfButton
+                  class="sf-add-to-cart__button"
+                  :disabled="loading"
+                  link="javascript:void(0);"
+                >
+                  Checkout
+                </SfButton>
+              </SfLink>
               <SfButton
                 class="sf-add-to-cart__button"
                 :disabled="loading"
                 @click="addingToCart({ product, quantity: parseInt(qty) })"
               >
-                Add to Bag
+                Cart
               </SfButton>
             </template>
           </SfAddToCart>
@@ -216,6 +230,7 @@
         </div>
       </div>
     </div>
+
     <LazyHydrate when-visible>
       <RelatedProducts
         :products="relatedProducts"
@@ -251,21 +266,28 @@ import {
   SfBreadcrumbs,
   SfLoader,
   SfButton,
-  SfColor
-} from '@storefront-ui/vue';
+  SfColor,
+  SfLink,
+} from "@storefront-ui/vue";
 
-import InstagramFeed from '~/components/InstagramFeed.vue';
-import RelatedProducts from '~/components/RelatedProducts1.vue';
-import { ref, computed, watch } from '@vue/composition-api';
-import { useProduct, useCart, productGetters } from '@vue-storefront/shopify';
-import MobileStoreBanner from '~/components/MobileStoreBanner.vue';
-import LazyHydrate from 'vue-lazy-hydration';
-import { onSSR } from '@vue-storefront/core';
-import useUiNotification from '~/composables/useUiNotification';
+import InstagramFeed from "~/components/InstagramFeed.vue";
+import RelatedProducts from "~/components/RelatedProducts1.vue";
+
+import { ref, computed, watch } from "@vue/composition-api";
+import {
+  useProduct,
+  useCart,
+  productGetters,
+  cartGetters,
+} from "@vue-storefront/shopify";
+import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
+import LazyHydrate from "vue-lazy-hydration";
+import { onSSR } from "@vue-storefront/core";
+import useUiNotification from "~/composables/useUiNotification";
 
 export default {
-  name: 'Product',
-  transition: 'fade',
+  name: "Product",
+  transition: "fade",
   beforeRouteEnter(to, from, next) {
     next((vm) => {
       vm.prevRoute = from;
@@ -277,11 +299,11 @@ export default {
     async addingToCart(Productdata) {
       await this.addItem(Productdata).then(() => {
         this.sendNotification({
-          key: 'product_added',
+          key: "product_added",
           message: `${Productdata.product.name} has been successfully added to your cart.`,
-          type: 'success',
-          title: 'Product added!',
-          icon: 'check'
+          type: "success",
+          title: "Product added!",
+          icon: "check",
         });
         this.qty = 1;
       });
@@ -292,28 +314,34 @@ export default {
     },
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     setGalleryWidth() {
-      const gallary = document.getElementsByClassName('product__gallery');
+      const gallary = document.getElementsByClassName("product__gallery");
       const gallerySlider =
-        gallary.length > 0 && gallary[0].querySelectorAll('.glide__slides');
+        gallary.length > 0 && gallary[0].querySelectorAll(".glide__slides");
       const galleryAllSlides =
         gallerySlider.length > 0 &&
-        gallerySlider[0].querySelectorAll('.glide__slide');
+        gallerySlider[0].querySelectorAll(".glide__slide");
       typeof galleryAllSlides !== Boolean &&
         galleryAllSlides.length > 0 &&
         galleryAllSlides.forEach((gallerySlide) => {
           gallerySlide.style.flexBasis = gallerySlide.style.width;
         });
-    }
+    },
+
+    handleCheckout(checkoutUrl) {
+      setTimeout(() => {
+        window.location.replace(checkoutUrl);
+      }, 400);
+    },
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   mounted() {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       this.setGalleryWidth();
     });
     this.$nextTick(() => {
       this.setGalleryWidth();
       this.setBreadcrumb();
-      window.addEventListener('resize', this.setGalleryWidth);
+      window.addEventListener("resize", this.setGalleryWidth);
     });
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -322,28 +350,28 @@ export default {
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup(props, context) {
+    const { cart, removeItem, updateItemQty, load: loadCart } = useCart();
+    const checkoutURL = computed(() => cartGetters.getcheckoutURL(cart.value));
     const breadcrumbs = ref([]);
-    const atttLbl = '';
+    const atttLbl = "";
     const qty = ref(1);
     const { slug } = context.root.$route.params;
-    const {
-      loading: productloading,
-      products,
-      search
-    } = useProduct('products');
+    const { loading: productloading, products, search } = useProduct(
+      "products"
+    );
     const { send: sendNotification } = useUiNotification();
     const {
       products: relatedProducts,
       search: searchRelatedProducts,
-      loading: relatedLoading
-    } = useProduct('relatedProducts');
+      loading: relatedLoading,
+    } = useProduct("relatedProducts");
     const { addItem, loading } = useCart();
 
     const product = computed(
       () =>
         productGetters.getFiltered(products.value, {
           master: true,
-          attributes: context.root.$route.query
+          attributes: context.root.$route.query,
         })[0]
     );
     const id = computed(() => productGetters.getId(product.value));
@@ -373,17 +401,17 @@ export default {
     const setBreadcrumb = () => {
       breadcrumbs.value = [
         {
-          text: 'Home',
-          route: { link: '/' }
+          text: "Home",
+          route: { link: "/" },
         },
         {
-          text: 'products',
-          route: { link: '#' }
+          text: "products",
+          route: { link: "#" },
         },
         {
           text: productTitle.value,
-          route: { link: '#' }
-        }
+          route: { link: "#" },
+        },
       ];
     };
 
@@ -400,14 +428,14 @@ export default {
       if (product.value && product.value.images.length === 0) {
         product.value.images.push({
           originalSrc:
-            'https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_600x600.jpg?v=1625742127'
+            "https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_600x600.jpg?v=1625742127",
         });
       }
       return productGetters.getGallery(product.value).map((img) => ({
         mobile: { url: img.small },
         desktop: { url: img.normal },
         big: { url: img.big },
-        alt: product.value._name || product.value.name
+        alt: product.value._name || product.value.name,
       }));
     });
     const stock = computed(() => {
@@ -419,8 +447,11 @@ export default {
 
     onSSR(async () => {
       await search({ slug, selectedOptions: configuration.value }).then(() => {
-        if (productTitle.value === 'Product\'s name') {
-          return context.root.error({ statusCode: 404, message: 'This product could not be found' });
+        if (productTitle.value === "Product's name") {
+          return context.root.error({
+            statusCode: 404,
+            message: "This product could not be found",
+          });
         }
       });
       await searchRelatedProducts({ productId: id.value, related: true });
@@ -442,8 +473,8 @@ export default {
         path: context.root.$route.path,
         query: {
           ...configuration.value,
-          ...filter
-        }
+          ...filter,
+        },
       });
     };
 
@@ -472,7 +503,8 @@ export default {
       productGallery,
       productGetters,
       setBreadcrumb,
-      atttLbl
+      atttLbl,
+      checkoutURL,
     };
   },
   components: {
@@ -486,6 +518,7 @@ export default {
     SfSelect,
     SfAddToCart,
     SfTabs,
+    SfLink,
     SfGallery,
     SfIcon,
     SfImage,
@@ -498,7 +531,7 @@ export default {
     InstagramFeed,
     RelatedProducts,
     MobileStoreBanner,
-    LazyHydrate
+    LazyHydrate,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -506,30 +539,30 @@ export default {
       stock: 5,
       properties: [
         {
-          name: 'Product Code',
-          value: '578902-00'
+          name: "Product Code",
+          value: "578902-00",
         },
         {
-          name: 'Category',
-          value: 'Pants'
+          name: "Category",
+          value: "Pants",
         },
         {
-          name: 'Material',
-          value: 'Cotton'
+          name: "Material",
+          value: "Cotton",
         },
         {
-          name: 'Country',
-          value: 'Germany'
-        }
+          name: "Country",
+          value: "Germany",
+        },
       ],
       description:
-        'Find stunning women cocktail and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.',
+        "Find stunning women cocktail and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.",
       detailsIsActive: false,
       brand:
-        'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',
-      careInstructions: 'Do not wash!'
+        "Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.",
+      careInstructions: "Do not wash!",
     };
-  }
+  },
 };
 </script>
 

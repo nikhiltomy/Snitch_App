@@ -3,26 +3,26 @@
     <slot>
   <section class="display--inline">
  <div>
-  <div  class="imagesction--bgcolor" style="padding-top:10px;padding-bottom:10px;display:inline-block;">
+  <div  class="imagesction--bgcolor wrapper" style="padding-top:10px;padding-bottom:10px;display:inline-block;">
   <img   alt="" src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635742005/NewV/a.png" style="max-width: 64%;">
 
   </div>
     <p style="" class="font--tag_p">Made In India</p>
  </div>
  <div>
-  <div  class="imagesction--bgcolor" style="padding-top:20px;padding-bottom:20px;display:inline-block;">
+  <div  class="imagesction--bgcolor wrapper" style="padding-top:20px;padding-bottom:20px;display:inline-block;">
   <img  alt="" src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635742005/NewV/b.png" style="max-width: 64%;">
   </div>
   <p  class="font--tag_p">Free Shipping Accross India</p>
   </div>
   <div style="">
-  <div class="imagesction--bgcolor" style="padding-top:10px;padding-bottom:10px;display:inline-block;">
+  <div class="imagesction--bgcolor wrapper" style="padding-top:10px;padding-bottom:10px;display:inline-block;">
   <img alt="" src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635742005/NewV/c.png" style="max-width: 64%;">
     </div>
   <p  class="font--tag_p">10 Days Hassle Free Returns & <br/> Exchange</p> 
   </div>
   <div>
-    <div class="imagesction--bgcolor" style="padding-top:20px;padding-bottom:20px;display:inline-block;">
+    <div class="imagesction--bgcolor wrapper" style="padding-top:20px;padding-bottom:20px;display:inline-block;">
   <img alt="" src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635742005/NewV/d.png" style="max-width: 64%;">
     </div>
   <p  class="font--tag_p">Premium Quality</p> 
@@ -57,6 +57,14 @@ export default {
   padding-top: 10px;
  padding-bottom: 10px;
 
+}
+.wrapper:hover{
+  
+  background-color:black;
+}
+div >img:hover {
+   filter: brightness(10) invert(10);  
+ 
 }
 .width_section{
   width: 20%;

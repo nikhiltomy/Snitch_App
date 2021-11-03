@@ -48,7 +48,7 @@
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('CUSTOMER CARE:')">
+    <SfFooterColumn :title="$t('CUSTOMER CARE')">
       <SfList>
         <SfListItem
           v-for="item in cc"
@@ -95,7 +95,7 @@ export default {
      categories: ['Shirts', 'T-Shirts', 'Jeans','Shorts','Co-ords','Boxers','Combo Deals'],
       gettoknow: ['CSR', 'FAQ','Contact Us','Terms & Conditions','Privacy Policy','Payment Terms','Track Order','Blogs'],
       cc: ['+91 080 4710 4444','','support@snitch.co.in'],
-      social: ['facebook', 'pinterest', 'google', 'twitter', 'youtube',""],
+      social: ['facebook', 'pinterest', 'google', 'twitter', 'youtube',''],
       isMobile: false,
     
     };
@@ -107,6 +107,17 @@ export default {
 span:hover{
   color: #000000;
 }
+
+.dislay_footerimage{
+  justify-content: space-between !important;
+}
+// .footer__social-image:hover{
+// background-color:black;
+
+// }
+// .sf-image-loaded:hover{
+// filter: brightness(10) invert(10);
+// }
 .footer {
   margin-bottom: 3.75rem;
   background-color:#fff;

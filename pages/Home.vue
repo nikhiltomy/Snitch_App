@@ -1,11 +1,21 @@
 <template>
   <div id="home">
     <div class="image_process">
-   <img src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635776527/NewV/BUY_3_GET_FLAT_15_OFF_Use_code_BUY3_1897_x_300_px_1600x.jpg" alt="" style="max-width:100%" >
-  </div>  
+      <img
+        src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1635776527/NewV/BUY_3_GET_FLAT_15_OFF_Use_code_BUY3_1897_x_300_px_1600x.jpg"
+        alt=""
+        style="max-width:100%"
+      />
+    </div>
     <CarouselBanner></CarouselBanner>
-    
-  
+
+    <Productgrid
+      :products="categoriesMostLiked.products"
+      :loading="productsLoading"
+    />
+
+    <Banner></Banner>
+
     <LazyHydrate when-visible>
       <RelatedProducts
         :products="products"
@@ -13,12 +23,8 @@
         title="Match it with"
       />
     </LazyHydrate>
-
-    <Banner></Banner>
-    <!-- <MostLoved></MostLoved> -->
     <CardContainer :categoriesList="categoriesList"></CardContainer>
-    
-    
+
     <lower-banner></lower-banner>
   </div>
 </template>
@@ -35,12 +41,12 @@ import {
   SfArrow,
   SfButton,
 } from "@storefront-ui/vue";
-import CarouselBanner from '~/components/CarouselBanner.vue';
+import Productgrid from "~/components/Productgrid.vue";
+import CarouselBanner from "~/components/CarouselBanner.vue";
 import Banner from "~/components/Banner.vue";
 import LowerBanner from "~/components/LowerBanner.vue";
 import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
-import MostLoved from '~/components/MostLoved.vue';
 import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
@@ -55,6 +61,10 @@ export default {
     const { categories: categoriesList, search: searchList } = useCategory(
       "all-categories"
     );
+    const {
+      categories: categoriesMostLiked,
+      search: searchMostLiked,
+    } = useCategory("most-loved");
 
     const {
       products: relatedProducts,
@@ -65,6 +75,7 @@ export default {
 
     onSSR(async () => {
       await searchList({ slug: "" });
+      await searchMostLiked({ slug: "most-loved" });
       await productsSearch({ limit: 8 });
       await loadCart();
     });
@@ -78,6 +89,7 @@ export default {
       addToCart,
       isInCart,
       categoriesList,
+      categoriesMostLiked,
     };
   },
   components: {
@@ -96,10 +108,10 @@ export default {
     MobileStoreBanner,
     LazyHydrate,
     CardContainer,
-    MostLoved,
     CarouselBanner,
     LowerBanner,
-    Banner
+    Banner,
+    Productgrid,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -216,14 +228,15 @@ export default {
     },
   },
   mounted() {
-    // console.log(this.categoriesList);
+    console.log(this.categoriesMostLiked);
   },
 };
 </script>
 
-<style lang="scss" >
-.sf-hero__control--left, .sf-hero__control--right{
-  display:none
+<style lang="scss">
+.sf-hero__control--left,
+.sf-hero__control--right {
+  display: none;
 }
 .article-meta h4 a {
   color: #111111;
@@ -344,12 +357,12 @@ export default {
   }
 }
 /// v style
-.image_process{
+.image_process {
   height: 160px;
 }
-@media only screen and (max-width: 600px){
-.image_process{
-  height:20px;
-}
+@media only screen and (max-width: 600px) {
+  .image_process {
+    height: 20px;
+  }
 }
 </style>

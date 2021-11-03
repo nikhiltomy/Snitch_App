@@ -108,17 +108,28 @@
         </span>
       </div>
       <TheDropdown></TheDropdown>
+  
       <a class="navContent" href="#about">SNITCH PLUS</a>
       <a class="navContent" href="#services">SNITCH LUXE</a>
       <a class="navContent" href="#clients">BULK ORDER</a>
       <a class="navContent" href="#contact">Place Return/Exchange <br> Request</a>
       <a class="navContent" href="#contact">Track Order</a>
       <a class="navContent" href="#contact">DOWNLOAD APP</a>
+      <a class="navContent" href="#login">Log in</a>
+      
+      <SfList class="dislay_footerimage">
+        <SfListItem v-for="item in social" :key="item" >
+      
+        <SfImage class="footer__social-image"  :key="item" :src="'/icons/'+item+'.svg'" :alt="item" width="32" height="32" />
+       
+      </SfListItem>
+      </SfList>
     </div>
   </div>
 </template>
 
 <script>
+import { SfFooter, SfList, SfImage, SfMenuItem } from '@storefront-ui/vue';
 import TheSearch from "~/components/TheSearch.vue"
 import TheDropdown from "~/components/TheDropdown.vue";
 import useUiState from "~/composables/useUiState";
@@ -127,7 +138,10 @@ import { computed, ref } from '@vue/composition-api';
 export default {
   components: {
     TheDropdown,
-    TheSearch
+    TheSearch,
+    SfFooter,
+    SfList,
+    SfImage
   },
   setup() {
    
@@ -153,13 +167,15 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
       toggleCartSidebar,
       toggleWishlistSidebar,
       handleAccountClick,
-      accountIcon
+      accountIcon,
+      
     };
   },
   data() {
     return {
       isActive: false,
-      searchbarActive:false
+      searchbarActive:false,
+      social: ['google','facebook','twitter', 'pinterest','youtube'],
     };
   },
 };
@@ -178,6 +194,11 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
   padding-top: 15px !important;
   scroll-padding-bottom: 15px;
 }
+.footer__social-image{
+  margin-top: 50px;
+ border:1px solid #F5F5F5;
+ padding: 5px;
+}
 /* .dropdown-btn {
   display: block;
   font-size: 1.5rem;
@@ -192,10 +213,10 @@ const accountIcon = computed(() => isAuthenticated.value ? 'profile_fill' : 'pro
 }
 .list {
   width: 200px;
-  float: right;
   height: 100px;
   text-align: center;
   padding-top: 25px;
+  padding-left: 40px !important;
 }
 #container {
   display: flex; /* establish flex container */
