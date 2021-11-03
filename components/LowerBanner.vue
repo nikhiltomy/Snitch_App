@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="">
     <slot>
   <section class="display--inline">
  <div>
@@ -40,7 +40,8 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
+
 .display--inline{
   background-color: #f5f4f4;
   display: flex;
@@ -48,6 +49,7 @@ export default {
   text-align: center;
   padding-top: 39px;
   padding-bottom: 30px;
+  margin-top: 30px;
   
 }
 .imagesction--bgcolor{
@@ -79,6 +81,14 @@ div >img:hover {
   font-weight:400;
   line-height: 24px;
 }
+@media only screen and (min-width:700px) and (max-width:800px){
+  .display--inline{
+    display: block;
+  }
+  .font--tag_p{
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 600px){
   .display--inline{
     display: block;
@@ -87,4 +97,5 @@ div >img:hover {
     font-size: 14px;
   }
 }
+
 </style>

@@ -8,7 +8,7 @@
       @close="toggleCartSidebar"
       :persistent="true"
     >
-    <p>Your cart is currently empty</p>
+    <!-- <p>Your cart is currently empty</p> -->
       <template #bar>
         <div></div>
       </template>
@@ -133,13 +133,13 @@
               class="empty-cart__image"
               src="/icons/empty-cart.svg"
             /> -->
-            <!-- <SfHeading
+            <SfHeading
               title="Woops! your cart is empty"
               :level="2"
               class="empty-cart__heading"
               description="Looks like you haven’t added any items to the bag yet. Start
               shopping to fill it in."
-            /> -->
+            />
             <!-- <SfHeading
               title="Woops! your cart is empty"
               :level="2"

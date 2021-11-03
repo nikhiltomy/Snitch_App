@@ -90,7 +90,7 @@ export default {
   },
   data() {
     return {
-      aboutsnitch: ['Encapsulating inspirations from', 'around the globe, SNITCH crafts', 'clothing for the fashion-forward','modern man. Offering an','unconventional style ethos as a','mens fast fashion brand, we','design style in response'],
+      aboutsnitch: ['Encapsulating inspirations from', 'around the globe, SNITCH crafts', 'clothing for the fashion-forward','modern man. Offering an','unconventional style ethos as a','mens fast fashion brand, we','design style in response.'],
       returns: ['Click To Place Return ', 'Returns & Exchange Policy'],
      categories: ['Shirts', 'T-Shirts', 'Jeans','Shorts','Co-ords','Boxers','Combo Deals'],
       gettoknow: ['CSR', 'FAQ','Contact Us','Terms & Conditions','Privacy Policy','Payment Terms','Track Order','Blogs'],
@@ -188,6 +188,19 @@ span:hover{
  @include for-mobile{
 .dislay_footerimage{
   display:none;
+}
+ }
+ @include for-desktop {
+.sf-menu-item__label{
+  font-size: 14px;
+  letter-spacing: .052em;
+    line-height: 1.55;
+}
+.sf-footer-column__title{
+  font-size: 14px;
+  letter-spacing: .052em;
+    line-height: 1.55;
+    font-weight: bold;
 }
  }
 </style>

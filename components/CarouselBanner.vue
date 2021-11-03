@@ -71,6 +71,14 @@ export default {
    .img_mobile{
      text-align: center;
    }
+   @media only screen and (min-width:700px) and (max-width:800px){
+       .sf-hero-item__wrapper{
+         min-height: 27.625rem;
+         background-size:cover;
+      }
+
+    
+   }
    @include for-desktop {
       .sf-hero-item__wrapper{
          min-height: 53.625rem;
@@ -81,6 +89,11 @@ export default {
        max-width: 100%;
       height: auto;
      } 
+   }
+   @media only screen and (min-width:700px){
+   .sf-hero-item__wrapper{
+     width: 344px;
+   }
    }
 .hero {
   margin: var(--spacer-xl) auto var(--spacer-lg);

@@ -9,12 +9,16 @@
     </div>
     <CarouselBanner></CarouselBanner>
 
+    <Productgrid1 :products="categoriesNew.products" />
+
+    <Banner></Banner>
+
     <Productgrid
       :products="categoriesMostLiked.products"
       :loading="productsLoading"
     />
 
-    <Banner></Banner>
+    <CardContainer :categoriesList="categoriesList"></CardContainer>
 
     <LazyHydrate when-visible>
       <RelatedProducts
@@ -23,7 +27,6 @@
         title="Match it with"
       />
     </LazyHydrate>
-    <CardContainer :categoriesList="categoriesList"></CardContainer>
 
     <lower-banner></lower-banner>
   </div>
@@ -42,6 +45,7 @@ import {
   SfButton,
 } from "@storefront-ui/vue";
 import Productgrid from "~/components/Productgrid.vue";
+import Productgrid1 from "~/components/Productgrid1.vue";
 import CarouselBanner from "~/components/CarouselBanner.vue";
 import Banner from "~/components/Banner.vue";
 import LowerBanner from "~/components/LowerBanner.vue";
@@ -66,6 +70,10 @@ export default {
       search: searchMostLiked,
     } = useCategory("most-loved");
 
+    const { categories: categoriesNew, search: searchNew } = useCategory(
+      "new-arrivals"
+    );
+
     const {
       products: relatedProducts,
       search: productsSearch,
@@ -76,6 +84,7 @@ export default {
     onSSR(async () => {
       await searchList({ slug: "" });
       await searchMostLiked({ slug: "most-loved" });
+      await searchNew({ slug: "new-arrivals" });
       await productsSearch({ limit: 8 });
       await loadCart();
     });
@@ -90,6 +99,7 @@ export default {
       isInCart,
       categoriesList,
       categoriesMostLiked,
+      categoriesNew,
     };
   },
   components: {
@@ -112,6 +122,7 @@ export default {
     LowerBanner,
     Banner,
     Productgrid,
+    Productgrid1,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {

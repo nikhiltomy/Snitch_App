@@ -40,7 +40,7 @@ export default {
   },
 };
 </script>
-<style  scoped>
+<style lang="scss"  scoped>
 .displaygrid {
   display: grid;
   grid-template-rows: auto auto;
@@ -62,6 +62,21 @@ export default {
   }
   .sf-banner{
   min-height: var(--banner-height, 7rem);
+}
+}
+@media only screen and (min-width:700px) and (max-width:800px)
+{
+.sf-banner{
+  background-size:cover;
+   background-position: center
+  
+  }
+  .displaygrid {
+   display:flex;
+   flex-direction: column;
+  }
+  .sf-banner{
+  min-height: var(--banner-height, 15rem);
 }
 }
 </style>
