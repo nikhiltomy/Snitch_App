@@ -130,7 +130,7 @@
 
 <script>
 import { SfFooter, SfList, SfImage, SfMenuItem } from '@storefront-ui/vue';
-import TheSearch from "~/components/TheSearch.vue"
+import TheSearch from "~/components/TheSearch.vue";
 import TheDropdown from "~/components/TheDropdown.vue";
 import useUiState from "~/composables/useUiState";
 import { useCart, useWishlist, useUser, cartGetters, useCategory } from '@vue-storefront/shopify';
