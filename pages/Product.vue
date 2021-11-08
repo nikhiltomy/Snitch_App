@@ -104,7 +104,14 @@
           </p>
           <div v-if="options && Object.keys(options).length > 0">
             <template v-for="(option, o) in options">
-              <SfSelect
+              <div v-if="o.toLowerCase() !== 'color'"
+                :key="`attrib-${o}`">
+
+              <button v-for="(attribs, a) in option"
+                  :key="`item-${a}`" @click.prevent="updateFilter({ [o]:attribs.value })"> {{ attribs.value }}</button>
+
+              </div>
+              <!-- <SfSelect
                 v-if="o.toLowerCase() !== 'color'"
                 :key="`attrib-${o}`"
                 :data-cy="`product-select_${o.toLowerCase()}`"
@@ -124,7 +131,7 @@
                 >
                   {{ attribs.value }}
                 </SfSelectOption>
-              </SfSelect>
+              </SfSelect> -->
               <div
                 :key="`attrib-${o.toLowerCase()}`"
                 v-else
@@ -295,6 +302,9 @@ export default {
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   methods: {
+    demo(){
+      alert("Hii");
+    },
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     async addingToCart(Productdata) {
       await this.addItem(Productdata).then(() => {
@@ -458,6 +468,7 @@ export default {
     });
 
     const updateFilter = (filter) => {
+      console.log(filter)
       if (options.value) {
         Object.keys(options.value).forEach((attr) => {
           if (attr in filter) {
@@ -532,6 +543,9 @@ export default {
     RelatedProducts,
     MobileStoreBanner,
     LazyHydrate,
+  },
+  mounted() {
+    console.log(this.options)
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {

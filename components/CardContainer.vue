@@ -25,7 +25,7 @@ h2 {
 }
 .discover {
   background-color: #f3f4f9;
-  padding: 0% 8% 0% 8%;
+  margin: 0% 1% 0% 1%;
   text-align: center;
  
 }

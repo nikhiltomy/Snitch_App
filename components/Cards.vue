@@ -15,7 +15,7 @@ export default {
 <style scoped>
 .grid-container {
   display: grid;
-  grid-template-columns: 120px 120px 120px 120px;
+  grid-template-columns: 290px 290px 290px 290px;
   grid-gap: 10px;
 
   padding: 10px;
@@ -28,8 +28,8 @@ export default {
 }
 
 .item {
-  width: 340px;
-  height: 369px;
+  width: 290px;
+  height: 315px;
   vertical-align: middle;
   background-size: cover;
 }

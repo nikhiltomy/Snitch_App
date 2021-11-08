@@ -15,7 +15,7 @@
     </div>
     <div class="shop_btn">
   <SfLink class="color-secondary sf-button " :aria-disabled="false"  :link="localePath(`/c/most-loved`)">
-    Shop now
+   View all
   </SfLink>
 </div>
   </div>
