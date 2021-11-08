@@ -23,14 +23,7 @@
  <!-- :price="list.price.original" -->
 </template>
 <script>
-// import {
-//   productGetters,
-//   useFacet,
-//   facetGetters,
-// } from "@vue-storefront/shopify";
-// import { SfProductCard } from "@storefront-ui/vue";
-// import { computed, onMounted } from "@vue/composition-api";
-// import { onSSR } from "@vue-storefront/core";
+ 
 import PrCard from  '~/components/ProductCard.vue';
 import {
   SfLink,
@@ -49,25 +42,7 @@ export default {
     PrCard ,
     SfLink
   },
-  // setup() {
-  //   const { result, search, loading } = useFacet();
-  //   const products = computed(() => facetGetters.getProducts(result.value));
-
-  //   onSSR(async () => {  
-  //     await search({
-  //       categorySlug: "shirts",
-  //       itemsPerPage: 8,
-  //     });
-  //   });
-
-  //    onMounted(()=>{ console.log("products grid", this.products)})
-
-  //   return {
-  //     products,
-  //     loading,
-  //     productGetters,
-  //   };
-  // },
+   
   computed: {
      productArray(){
        return this.products ;
