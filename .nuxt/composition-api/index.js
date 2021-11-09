@@ -442,7 +442,7 @@ const globalPlugin = (context) => {
   };
 };
 
-const staticPath = "A:/Vue_Workspace/Snitch_App/.nuxt/static-json";
+const staticPath = "D:/GitHub/Snitch_App/.nuxt/static-json";
 const staticCache = {};
 function writeFile(key, value) {
   if (process.client || !process.static)
