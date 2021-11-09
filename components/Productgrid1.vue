@@ -6,7 +6,8 @@
         <PrCard1 v-for="(list, i) in productArray"
           :key="i"
             :title="list.handle"
-           :imgUrl="list.images[0].src"
+           :image1="list.images[0].src"
+           :image2="list.images[1].src"
            :price="list.variants[0].price"
            :link="localePath(`/p/${list.id}/${list.handle}`)"
           />
@@ -49,27 +50,17 @@ export default {
     PrCard1 ,
     SfLink
   },
-  // setup() {
-  //   const { result, search, loading } = useFacet();
-  //   const products = computed(() => facetGetters.getProducts(result.value));
 
-  //   onSSR(async () => {  
-  //     await search({
-  //       categorySlug: "shirts",
-  //       itemsPerPage: 8,
-  //     });
-  //   });
+  data(){
+    return {
+      imagesArray: [],
+      productsArray : {} ,
+    }
+  },
 
-  //    onMounted(()=>{ console.log("products grid", this.products)})
-
-  //   return {
-  //     products,
-  //     loading,
-  //     productGetters,
-  //   };
-  // },
   computed: {
      productArray(){
+      
        return this.products ;
      }
   } ,
@@ -77,6 +68,15 @@ export default {
     mounted(){
    console.log('grid' ,this.products);
     console.log( );
+     
+        this.products.forEach( (ob) => {
+      let a= {image:[] , alt: ''}  ; 
+            a.image = ob.images ;
+            a.alt =  ob.handle ;
+            //console.log(a) ;
+        this.imagesArray.push(a);
+     });
+ //  console.log(this.imagesArray);
   },
 
 

@@ -2,64 +2,64 @@
   {
     "name": "Category___en",
     "path": "/Category",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Category.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Category.vue",
     "chunkName": "pages/Category"
   },
   {
     "name": "checkout___en",
     "path": "/checkout",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout.vue",
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout.vue",
     "children": [
       {
         "path": "billing",
         "name": "billing___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue"
       },
       {
         "path": "payment",
         "name": "payment___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue"
       },
       {
         "path": "shipping",
         "name": "shipping___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue"
       },
       {
         "path": "thank-you",
         "name": "thank-you___en",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
       }
     ]
   },
   {
     "name": "Checkout___en",
     "path": "/Checkout",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout.vue",
     "chunkName": "pages/Checkout",
     "children": [
       {
         "name": "Checkout-Billing___en",
         "path": "Billing",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
         "chunkName": "pages/Checkout/Billing"
       },
       {
         "name": "Checkout-Payment___en",
         "path": "Payment",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
         "chunkName": "pages/Checkout/Payment"
       },
       {
         "name": "Checkout-Shipping___en",
         "path": "Shipping",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
         "chunkName": "pages/Checkout/Shipping"
       },
       {
         "name": "Checkout-ThankYou___en",
         "path": "ThankYou",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
         "chunkName": "pages/Checkout/ThankYou"
       }
     ]
@@ -67,72 +67,72 @@
   {
     "name": "ContactUs___en",
     "path": "/ContactUs",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
     "chunkName": "pages/ContactUs"
   },
   {
     "name": "home___de",
     "path": "/de",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue"
   },
   {
     "name": "Home___en",
     "path": "/Home",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Home.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Home.vue",
     "chunkName": "pages/Home"
   },
   {
     "name": "MyAccount___en",
     "path": "/MyAccount",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount.vue",
     "chunkName": "pages/MyAccount",
     "children": [
       {
         "name": "MyAccount-AdressBook___en",
         "path": "AdressBook",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
         "chunkName": "pages/MyAccount/AdressBook"
       },
       {
         "name": "MyAccount-BillingDetails___en",
         "path": "BillingDetails",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
         "chunkName": "pages/MyAccount/BillingDetails"
       },
       {
         "name": "MyAccount-LoyaltyCard___en",
         "path": "LoyaltyCard",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
         "chunkName": "pages/MyAccount/LoyaltyCard"
       },
       {
         "name": "MyAccount-MyNewsletter___en",
         "path": "MyNewsletter",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
         "chunkName": "pages/MyAccount/MyNewsletter"
       },
       {
         "name": "MyAccount-MyProfile___en",
         "path": "MyProfile",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
         "chunkName": "pages/MyAccount/MyProfile"
       },
       {
         "name": "MyAccount-MyReviews___en",
         "path": "MyReviews",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
         "chunkName": "pages/MyAccount/MyReviews"
       },
       {
         "name": "MyAccount-OrderHistory___en",
         "path": "OrderHistory",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
         "chunkName": "pages/MyAccount/OrderHistory"
       },
       {
         "name": "MyAccount-ShippingDetails___en",
         "path": "ShippingDetails",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
         "chunkName": "pages/MyAccount/ShippingDetails"
       }
     ]
@@ -140,81 +140,81 @@
   {
     "name": "Product___en",
     "path": "/Product",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Product.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Product.vue",
     "chunkName": "pages/Product"
   },
   {
     "name": "reset-password___en",
     "path": "/reset-password",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue"
   },
   {
     "name": "ResetPassword___en",
     "path": "/ResetPassword",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
     "chunkName": "pages/ResetPassword"
   },
   {
     "name": "Category___de",
     "path": "/de/Category",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Category.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Category.vue",
     "chunkName": "pages/Category"
   },
   {
     "name": "checkout___de",
     "path": "/de/checkout",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout.vue",
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout.vue",
     "children": [
       {
         "path": "billing",
         "name": "billing___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue"
       },
       {
         "path": "payment",
         "name": "payment___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue"
       },
       {
         "path": "shipping",
         "name": "shipping___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue"
       },
       {
         "path": "thank-you",
         "name": "thank-you___de",
-        "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
       }
     ]
   },
   {
     "name": "Checkout___de",
     "path": "/de/Checkout",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout.vue",
     "chunkName": "pages/Checkout",
     "children": [
       {
         "name": "Checkout-Billing___de",
         "path": "Billing",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
         "chunkName": "pages/Checkout/Billing"
       },
       {
         "name": "Checkout-Payment___de",
         "path": "Payment",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
         "chunkName": "pages/Checkout/Payment"
       },
       {
         "name": "Checkout-Shipping___de",
         "path": "Shipping",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
         "chunkName": "pages/Checkout/Shipping"
       },
       {
         "name": "Checkout-ThankYou___de",
         "path": "ThankYou",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
         "chunkName": "pages/Checkout/ThankYou"
       }
     ]
@@ -222,67 +222,67 @@
   {
     "name": "ContactUs___de",
     "path": "/de/ContactUs",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
     "chunkName": "pages/ContactUs"
   },
   {
     "name": "Home___de",
     "path": "/de/Home",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Home.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Home.vue",
     "chunkName": "pages/Home"
   },
   {
     "name": "MyAccount___de",
     "path": "/de/MyAccount",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount.vue",
     "chunkName": "pages/MyAccount",
     "children": [
       {
         "name": "MyAccount-AdressBook___de",
         "path": "AdressBook",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
         "chunkName": "pages/MyAccount/AdressBook"
       },
       {
         "name": "MyAccount-BillingDetails___de",
         "path": "BillingDetails",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
         "chunkName": "pages/MyAccount/BillingDetails"
       },
       {
         "name": "MyAccount-LoyaltyCard___de",
         "path": "LoyaltyCard",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
         "chunkName": "pages/MyAccount/LoyaltyCard"
       },
       {
         "name": "MyAccount-MyNewsletter___de",
         "path": "MyNewsletter",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
         "chunkName": "pages/MyAccount/MyNewsletter"
       },
       {
         "name": "MyAccount-MyProfile___de",
         "path": "MyProfile",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
         "chunkName": "pages/MyAccount/MyProfile"
       },
       {
         "name": "MyAccount-MyReviews___de",
         "path": "MyReviews",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
         "chunkName": "pages/MyAccount/MyReviews"
       },
       {
         "name": "MyAccount-OrderHistory___de",
         "path": "OrderHistory",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
         "chunkName": "pages/MyAccount/OrderHistory"
       },
       {
         "name": "MyAccount-ShippingDetails___de",
         "path": "ShippingDetails",
-        "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
+        "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
         "chunkName": "pages/MyAccount/ShippingDetails"
       }
     ]
@@ -290,53 +290,53 @@
   {
     "name": "Product___de",
     "path": "/de/Product",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\Product.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Product.vue",
     "chunkName": "pages/Product"
   },
   {
     "name": "reset-password___de",
     "path": "/de/reset-password",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue"
   },
   {
     "name": "ResetPassword___de",
     "path": "/de/ResetPassword",
-    "component": "A:\\\\Vue_Workspace\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
+    "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
     "chunkName": "pages/ResetPassword"
   },
   {
     "name": "my-account___de",
     "path": "/de/my-account/:pageName?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue"
   },
   {
     "name": "product___de",
     "path": "/de/p/:id/:slug",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue"
   },
   {
     "name": "category___de",
     "path": "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue"
   },
   {
     "name": "my-account___en",
     "path": "/my-account/:pageName?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue"
   },
   {
     "name": "product___en",
     "path": "/p/:id/:slug",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Product.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue"
   },
   {
     "name": "category___en",
     "path": "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Category.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue"
   },
   {
     "name": "home___en",
     "path": "/",
-    "component": "A:\\Vue_Workspace\\Snitch_App\\pages\\Home.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue"
   }
 ]

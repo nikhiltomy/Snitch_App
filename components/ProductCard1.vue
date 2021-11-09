@@ -1,7 +1,8 @@
 <template>
  <a :href="link">
    <div  class="card-container">
-       <div class="prImage" href="#"  :style="{ backgroundImage: `url(${imgUrl})` }" alt="..." />
+       <div class="prImage" id="image1" href="#"  :style="{ backgroundImage: `url(${image1})` }" alt="" />
+       <div class="prImage" id="image2" href="#"  :style="{ backgroundImage: `url(${image2})` }" alt="" hidden/>
        <p  class="card__title">{{ title }}</p>
        <p class="card__price">Rs {{ price }}</p>
    </div>
@@ -17,8 +18,8 @@ import {
 import { productGetters } from '@vue-storefront/shopify';
 
 export default {
-    name:'PrCard' ,
-     props: ['title','price','imgUrl','link'] , 
+    name:'PrCard1' ,
+     props: ['title','price','image1','image2', 'link'] , 
 
  setup() {
     return { productGetters };
@@ -30,10 +31,8 @@ export default {
   },
  
 
-  mounted(){
-    //console.log(this.products);
-    // console.log('hiii' ,this.products);
-    console.log("imgurl" ,this.link); 
+  mounted(){ 
+    console.log("imgurl" ,this.title); 
   },
 
   data(){
@@ -60,6 +59,23 @@ export default {
         width: 100%;
         
     }
+
+    .card-container > #image1 {
+      display: block;
+    }
+
+    .card-container > #image2 {
+      display: none;
+    }
+
+    .card-container:hover > #image1 {
+      display: none;
+    }
+
+  .card-container:hover > #image2 {
+      display: block;
+    }
+    
 
   .prImage{
       width:100%;
