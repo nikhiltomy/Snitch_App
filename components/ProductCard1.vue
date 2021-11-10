@@ -1,4 +1,4 @@
-<template>
+<template v-slot:hovercard>
  <a :href="link">
    <div  class="card-container">
        <div class="prImage" id="image1" href="#"  :style="{ backgroundImage: `url(${image1})` }" alt="" />

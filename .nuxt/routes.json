@@ -3,7 +3,8 @@
     "name": "Category___en",
     "path": "/Category",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
+    "chunkName": "pages/Category",
+    "_name": "_1e56c01e"
   },
   {
     "name": "checkout___en",
@@ -13,24 +14,29 @@
       {
         "path": "billing",
         "name": "billing___en",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue",
+        "_name": "_41333a7b"
       },
       {
         "path": "payment",
         "name": "payment___en",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue",
+        "_name": "_403ae6f4"
       },
       {
         "path": "shipping",
         "name": "shipping___en",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue",
+        "_name": "_24ee4b5e"
       },
       {
         "path": "thank-you",
         "name": "thank-you___en",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue",
+        "_name": "_0e7c1705"
       }
-    ]
+    ],
+    "_name": "_0e4edb7c"
   },
   {
     "name": "Checkout___en",
@@ -42,44 +48,52 @@
         "name": "Checkout-Billing___en",
         "path": "Billing",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
+        "chunkName": "pages/Checkout/Billing",
+        "_name": "_0ce879e5"
       },
       {
         "name": "Checkout-Payment___en",
         "path": "Payment",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
+        "chunkName": "pages/Checkout/Payment",
+        "_name": "_a8d06820"
       },
       {
         "name": "Checkout-Shipping___en",
         "path": "Shipping",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
+        "chunkName": "pages/Checkout/Shipping",
+        "_name": "_603e0d98"
       },
       {
         "name": "Checkout-ThankYou___en",
         "path": "ThankYou",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
+        "chunkName": "pages/Checkout/ThankYou",
+        "_name": "_8d22764a"
       }
-    ]
+    ],
+    "_name": "_5c1dec66"
   },
   {
     "name": "ContactUs___en",
     "path": "/ContactUs",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
+    "chunkName": "pages/ContactUs",
+    "_name": "_79eaa824"
   },
   {
     "name": "home___de",
     "path": "/de",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue",
+    "_name": "_43b10d95"
   },
   {
     "name": "Home___en",
     "path": "/Home",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
+    "chunkName": "pages/Home",
+    "_name": "_469db902"
   },
   {
     "name": "MyAccount___en",
@@ -91,74 +105,87 @@
         "name": "MyAccount-AdressBook___en",
         "path": "AdressBook",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
+        "chunkName": "pages/MyAccount/AdressBook",
+        "_name": "_a8c928e0"
       },
       {
         "name": "MyAccount-BillingDetails___en",
         "path": "BillingDetails",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
+        "chunkName": "pages/MyAccount/BillingDetails",
+        "_name": "_1391b7d8"
       },
       {
         "name": "MyAccount-LoyaltyCard___en",
         "path": "LoyaltyCard",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
+        "chunkName": "pages/MyAccount/LoyaltyCard",
+        "_name": "_685d0d96"
       },
       {
         "name": "MyAccount-MyNewsletter___en",
         "path": "MyNewsletter",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
+        "chunkName": "pages/MyAccount/MyNewsletter",
+        "_name": "_0a3b8356"
       },
       {
         "name": "MyAccount-MyProfile___en",
         "path": "MyProfile",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
+        "chunkName": "pages/MyAccount/MyProfile",
+        "_name": "_503a7548"
       },
       {
         "name": "MyAccount-MyReviews___en",
         "path": "MyReviews",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
+        "chunkName": "pages/MyAccount/MyReviews",
+        "_name": "_1f65a6ce"
       },
       {
         "name": "MyAccount-OrderHistory___en",
         "path": "OrderHistory",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
+        "chunkName": "pages/MyAccount/OrderHistory",
+        "_name": "_34feb692"
       },
       {
         "name": "MyAccount-ShippingDetails___en",
         "path": "ShippingDetails",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
+        "chunkName": "pages/MyAccount/ShippingDetails",
+        "_name": "_0e80aaf3"
       }
-    ]
+    ],
+    "_name": "_62b9e671"
   },
   {
     "name": "Product___en",
     "path": "/Product",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
+    "chunkName": "pages/Product",
+    "_name": "_0c774102"
   },
   {
     "name": "reset-password___en",
     "path": "/reset-password",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue",
+    "_name": "_18fa1ec4"
   },
   {
     "name": "ResetPassword___en",
     "path": "/ResetPassword",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
+    "chunkName": "pages/ResetPassword",
+    "_name": "_1d39dfcc"
   },
   {
     "name": "Category___de",
     "path": "/de/Category",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
+    "chunkName": "pages/Category",
+    "_name": "_1e56c01e"
   },
   {
     "name": "checkout___de",
@@ -168,24 +195,29 @@
       {
         "path": "billing",
         "name": "billing___de",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Billing.vue",
+        "_name": "_41333a7b"
       },
       {
         "path": "payment",
         "name": "payment___de",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Payment.vue",
+        "_name": "_403ae6f4"
       },
       {
         "path": "shipping",
         "name": "shipping___de",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\Shipping.vue",
+        "_name": "_24ee4b5e"
       },
       {
         "path": "thank-you",
         "name": "thank-you___de",
-        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue"
+        "component": "D:\\GitHub\\Snitch_App\\pages\\Checkout\\ThankYou.vue",
+        "_name": "_0e7c1705"
       }
-    ]
+    ],
+    "_name": "_0e4edb7c"
   },
   {
     "name": "Checkout___de",
@@ -197,39 +229,46 @@
         "name": "Checkout-Billing___de",
         "path": "Billing",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
+        "chunkName": "pages/Checkout/Billing",
+        "_name": "_0ce879e5"
       },
       {
         "name": "Checkout-Payment___de",
         "path": "Payment",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
+        "chunkName": "pages/Checkout/Payment",
+        "_name": "_a8d06820"
       },
       {
         "name": "Checkout-Shipping___de",
         "path": "Shipping",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
+        "chunkName": "pages/Checkout/Shipping",
+        "_name": "_603e0d98"
       },
       {
         "name": "Checkout-ThankYou___de",
         "path": "ThankYou",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
+        "chunkName": "pages/Checkout/ThankYou",
+        "_name": "_8d22764a"
       }
-    ]
+    ],
+    "_name": "_5c1dec66"
   },
   {
     "name": "ContactUs___de",
     "path": "/de/ContactUs",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
+    "chunkName": "pages/ContactUs",
+    "_name": "_79eaa824"
   },
   {
     "name": "Home___de",
     "path": "/de/Home",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
+    "chunkName": "pages/Home",
+    "_name": "_469db902"
   },
   {
     "name": "MyAccount___de",
@@ -241,102 +280,121 @@
         "name": "MyAccount-AdressBook___de",
         "path": "AdressBook",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
+        "chunkName": "pages/MyAccount/AdressBook",
+        "_name": "_a8c928e0"
       },
       {
         "name": "MyAccount-BillingDetails___de",
         "path": "BillingDetails",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
+        "chunkName": "pages/MyAccount/BillingDetails",
+        "_name": "_1391b7d8"
       },
       {
         "name": "MyAccount-LoyaltyCard___de",
         "path": "LoyaltyCard",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
+        "chunkName": "pages/MyAccount/LoyaltyCard",
+        "_name": "_685d0d96"
       },
       {
         "name": "MyAccount-MyNewsletter___de",
         "path": "MyNewsletter",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
+        "chunkName": "pages/MyAccount/MyNewsletter",
+        "_name": "_0a3b8356"
       },
       {
         "name": "MyAccount-MyProfile___de",
         "path": "MyProfile",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
+        "chunkName": "pages/MyAccount/MyProfile",
+        "_name": "_503a7548"
       },
       {
         "name": "MyAccount-MyReviews___de",
         "path": "MyReviews",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
+        "chunkName": "pages/MyAccount/MyReviews",
+        "_name": "_1f65a6ce"
       },
       {
         "name": "MyAccount-OrderHistory___de",
         "path": "OrderHistory",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
+        "chunkName": "pages/MyAccount/OrderHistory",
+        "_name": "_34feb692"
       },
       {
         "name": "MyAccount-ShippingDetails___de",
         "path": "ShippingDetails",
         "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
+        "chunkName": "pages/MyAccount/ShippingDetails",
+        "_name": "_0e80aaf3"
       }
-    ]
+    ],
+    "_name": "_62b9e671"
   },
   {
     "name": "Product___de",
     "path": "/de/Product",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
+    "chunkName": "pages/Product",
+    "_name": "_0c774102"
   },
   {
     "name": "reset-password___de",
     "path": "/de/reset-password",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\ResetPassword.vue",
+    "_name": "_18fa1ec4"
   },
   {
     "name": "ResetPassword___de",
     "path": "/de/ResetPassword",
     "component": "D:\\\\GitHub\\\\Snitch_App\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
+    "chunkName": "pages/ResetPassword",
+    "_name": "_1d39dfcc"
   },
   {
     "name": "my-account___de",
     "path": "/de/my-account/:pageName?",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue",
+    "_name": "_12b24bca"
   },
   {
     "name": "product___de",
     "path": "/de/p/:id/:slug",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue",
+    "_name": "_28ce35a9"
   },
   {
     "name": "category___de",
     "path": "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue",
+    "_name": "_5ef0a198"
   },
   {
     "name": "my-account___en",
     "path": "/my-account/:pageName?",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\MyAccount.vue",
+    "_name": "_12b24bca"
   },
   {
     "name": "product___en",
     "path": "/p/:id/:slug",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Product.vue",
+    "_name": "_28ce35a9"
   },
   {
     "name": "category___en",
     "path": "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Category.vue",
+    "_name": "_5ef0a198"
   },
   {
     "name": "home___en",
     "path": "/",
-    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue"
+    "component": "D:\\GitHub\\Snitch_App\\pages\\Home.vue",
+    "_name": "_43b10d95"
   }
 ]

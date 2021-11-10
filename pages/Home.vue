@@ -9,15 +9,20 @@
     </div>
     <CarouselBanner></CarouselBanner>
 
-    <Productgrid1 :products="categoriesNew.products" />
+    <Productgrid1  
+          :products="categoriesNew.products"
+          :loading="productsLoading"
+           linktext="new-arrivals"
+           htitle="WHATS NEW" />
 
     <Banner></Banner>
 
-    <Productgrid
-      :products="categoriesMostLiked.products"
-      :loading="productsLoading"
-    />
-
+    <Productgrid1  
+          :products="categoriesMostLiked.products"
+          :loading="productsLoading"
+           linktext="most-loved"
+           htitle="MOST LOVED 🖤" />
+ 
     <CardContainer :categoriesList="categoriesList"></CardContainer>
 
     <LazyHydrate when-visible>
@@ -44,7 +49,6 @@ import {
   SfArrow,
   SfButton,
 } from "@storefront-ui/vue";
-import Productgrid from "~/components/Productgrid.vue";
 import Productgrid1 from "~/components/Productgrid1.vue";
 import CarouselBanner from "~/components/CarouselBanner.vue";
 import Banner from "~/components/Banner.vue";
@@ -121,8 +125,7 @@ export default {
     CarouselBanner,
     LowerBanner,
     Banner,
-    Productgrid,
-    Productgrid1,
+     Productgrid1,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
