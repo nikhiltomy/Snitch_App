@@ -1,6 +1,6 @@
- <template lang="">
+ <template lang="" >
     <div class="gridWrapper">
-     <h2>WHAT'S NEW</h2>
+     <h2> {{ htitle }}</h2>
       <div class="grid__container">
       <!-- <div class="product-grid"> -->
         <PrCard1 v-for="(list, i) in productArray"
@@ -15,23 +15,14 @@
         
     </div>
     <div class="shop_btn">
-  <SfLink class="color-secondary sf-button " :aria-disabled="false"  :link="localePath(`/c/new-arrivals`)">
+  <SfLink class="color-secondary sf-button " :aria-disabled="false"  :link="localePath(`/c/${linktext}`)">
     View all
   </SfLink>
 </div>
   </div>
- 
- <!-- :price="list.price.original" -->
+
 </template>
-<script>
-// import {
-//   productGetters,
-//   useFacet,
-//   facetGetters,
-// } from "@vue-storefront/shopify";
-// import { SfProductCard } from "@storefront-ui/vue";
-// import { computed, onMounted } from "@vue/composition-api";
-// import { onSSR } from "@vue-storefront/core";
+<script> 
 import PrCard1 from  '~/components/ProductCard1.vue';
 import {
   SfLink,
@@ -41,21 +32,16 @@ export default {
   props: {
     title: String,
     products: Array,
-    loading: Boolean
+    loading: Boolean ,
+    htitle: String , 
+    linktext: String, 
   },
 
-  name : 'Productgrid' ,
+  name : 'Productgrid1' ,
 
   components:{
     PrCard1 ,
     SfLink
-  },
-
-  data(){
-    return {
-      imagesArray: [],
-      productsArray : {} ,
-    }
   },
 
   computed: {
@@ -69,14 +55,6 @@ export default {
    console.log('grid' ,this.products);
     console.log( );
      
-        this.products.forEach( (ob) => {
-      let a= {image:[] , alt: ''}  ; 
-            a.image = ob.images ;
-            a.alt =  ob.handle ;
-            //console.log(a) ;
-        this.imagesArray.push(a);
-     });
- //  console.log(this.imagesArray);
   },
 
 
@@ -121,17 +99,17 @@ h2 {
   padding:0px 20px; 
  }
 
-       
-       .grid__container{  
-        display: grid;
-        margin:  0px 4px;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        /* border: 1px dashed black; */
-        column-gap: 22px;
-        row-gap: 28px;
-    }
 
- }
-  
+.grid__container{  
+display: grid;
+margin:  0px 4px;
+width: 100%;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+/* border: 1px dashed black; */
+column-gap: 22px;
+row-gap: 28px;
+}
+
+}
+
 </style> 

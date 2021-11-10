@@ -1,6 +1,6 @@
  <template lang="">
     <div class="gridWrapper">
-     <h2>MOST LOVED 🖤</h2>
+     <h2>{{ htitle }}</h2>
       <div class="grid__container">
       <!-- <div class="product-grid"> -->
         <PrCard v-for="(list, i) in productArray"
@@ -33,7 +33,8 @@ export default {
   props: {
     title: String,
     products: Array,
-    loading: Boolean
+    loading: Boolean ,
+    htitle: String , 
   },
 
   name : 'Productgrid' ,
@@ -50,7 +51,7 @@ export default {
   } ,
 
     mounted(){
-   console.log('grid' ,this.products);
+   console.log('grid 8 ' ,this.products);
     console.log( );
   },
 
@@ -83,30 +84,22 @@ h2 {
         row-gap: 20px;
     }
 
-@media screen and (min-width: 768px) {
-
- }
-
-
-
 @media screen and (min-width: 992px) {
         .gridWrapper{
   display:grid;
   place-items: center;
   padding:0px 20px; 
  }
+.grid__container{  
+  display: grid;
+  margin:  0px 4px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  /* border: 1px dashed black; */
+  column-gap: 22px;
+  row-gap: 28px;
+}
 
-       
-       .grid__container{  
-        display: grid;
-        margin:  0px 4px;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        /* border: 1px dashed black; */
-        column-gap: 22px;
-        row-gap: 28px;
-    }
+}
 
- }
-  
 </style> 
