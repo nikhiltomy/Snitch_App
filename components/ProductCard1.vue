@@ -1,10 +1,16 @@
 <template v-slot:hovercard>
  <a :href="link">
    <div  class="card-container">
+    
        <div class="prImage" id="image1" href="#"  :style="{ backgroundImage: `url(${image1})` }" alt="" />
        <div class="prImage" id="image2" href="#"  :style="{ backgroundImage: `url(${image2})` }" alt="" hidden/>
+       <div class="varient__image">
+        <the-variant :variants="this.variant" ></the-variant>
+       <!-- <img v-for="image in variant" :key="image.id"   :src="image.src"  style="border-radius: 14px;text-align: center;width:12%;paddimg-left:20px"> -->
+       
+       </div>
        <p  class="card__title">{{ title }}</p>
-       <p class="card__price">Rs {{ price }}</p>
+       <p class="card__price">Rs {{ price }}ccc</p>
    </div>
  </a>
 </template>
@@ -16,31 +22,40 @@ import {
   SfPrice
 } from '@storefront-ui/vue';
 import { productGetters } from '@vue-storefront/shopify';
-
+import  TheVariant from '~/components/TheVariant.vue'
 export default {
     name:'PrCard1' ,
-     props: ['title','price','image1','image2', 'link'] , 
+     props: ['title','price','image1','image2', 'link','variant'] , 
 
  setup() {
     return { productGetters };
   },
   components: {
-     
+     TheVariant,
     SfLink,
     SfPrice
+    
   },
+  
  
 
-  mounted(){ 
-    console.log("imgurl" ,this.title); 
-  },
+  // mounted(){ 
+  //   console.log("imgurl" ,this.title);
+  //     console.log("HELLO HELLO" ); 
+  //   console.log(productGetters );
+  // },
 
   data(){
       return{
-          
+         
       }
   },
+  methods:{
+       changeImage(){
 
+       }
+     },
+     
   computed: {
     getUrl(){
       return 
@@ -59,7 +74,18 @@ export default {
         width: 100%;
         
     }
-
+    .varient__image{
+      
+      padding-top: 10px;
+      padding-bottom: 0px;
+      text-align: center;
+      white-space: nowrap;
+    
+      
+     
+      
+     
+    }
     .card-container > #image1 {
       display: block;
     }
