@@ -6,10 +6,12 @@
             <p class="vs-modal__subtitle--down">with order of $25 or vs-more</p>
 
              <div class="vs-modal__input-wrapper"> 
-                 <input class="vs-modal__input"   v-model="emailInput" placeholder="Enter your email id"/>
+                 <form>
+                 <input class="vs-modal__input" type="email" @input="printt"   placeholder="Enter your email id"/>
                  <button class="vs-modal__input-button"  type="submit">SUBMIT</button>
+                 </form>
              </div>
-            
+             <p><a href="#" @click="$emit('closeModal')">No thanks I prefer Privacy</a></p>
        </div>
    </div>
 </template>
@@ -18,16 +20,22 @@
 export default {
  name:'Modal',
  
+ emits: ['closeModal'],
+
  data(){
      return{
-         emailInput: ''
+         emailInput: '' , 
      };
  } ,
 
+ methods: {
+     printt(e){
+         console.log(e.target.value);
+     } ,
+ },
+
  computed: {
-     inputValidate(){
-         console.log(this.emailInput);
-     }
+     
  }
 
 }

@@ -23,7 +23,7 @@
            linktext="most-loved"
            htitle="MOST LOVED 🖤" />
 
-        <Modal v-if="showModal" />
+    <Modal v-if="showModal" @closeModal="closeModal"/>
  
     <CardContainer :categoriesList="categoriesList"></CardContainer>
 
@@ -245,6 +245,10 @@ export default {
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     toggleWishlist(index) {
       this.products[index].isInWishlist = !this.products[index].isInWishlist;
+    },
+
+    closeModal(){
+        this.showModal = false;
     },
 
     modalPopup(){
