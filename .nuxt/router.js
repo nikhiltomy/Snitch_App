@@ -4,35 +4,35 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7b76e0de = () => interopDefault(import('..\\pages\\Category.vue' /* webpackChunkName: "pages/Category" */))
-const _6b7c3554 = () => interopDefault(import('..\\pages\\Checkout.vue' /* webpackChunkName: "" */))
-const _05b53c53 = () => interopDefault(import('..\\pages\\Checkout\\Billing.vue' /* webpackChunkName: "" */))
-const _b736e344 = () => interopDefault(import('..\\pages\\Checkout\\Payment.vue' /* webpackChunkName: "" */))
-const _1ea6f6f4 = () => interopDefault(import('..\\pages\\Checkout\\Shipping.vue' /* webpackChunkName: "" */))
-const _4b8b5fa6 = () => interopDefault(import('..\\pages\\Checkout\\ThankYou.vue' /* webpackChunkName: "" */))
-const _8d83e5b4 = () => interopDefault(import('..\\pages\\Checkout.vue' /* webpackChunkName: "pages/Checkout" */))
-const _4dfd9db6 = () => interopDefault(import('..\\pages\\Checkout\\Billing.vue' /* webpackChunkName: "pages/Checkout/Billing" */))
-const _77b08330 = () => interopDefault(import('..\\pages\\Checkout\\Payment.vue' /* webpackChunkName: "pages/Checkout/Payment" */))
-const _f241ac18 = () => interopDefault(import('..\\pages\\Checkout\\Shipping.vue' /* webpackChunkName: "pages/Checkout/Shipping" */))
-const _706cf59b = () => interopDefault(import('..\\pages\\Checkout\\ThankYou.vue' /* webpackChunkName: "pages/Checkout/ThankYou" */))
-const _09eea32e = () => interopDefault(import('..\\pages\\ContactUs.vue' /* webpackChunkName: "pages/ContactUs" */))
-const _4ef5d926 = () => interopDefault(import('..\\pages\\Home.vue' /* webpackChunkName: "" */))
-const _8b00b782 = () => interopDefault(import('..\\pages\\Home.vue' /* webpackChunkName: "pages/Home" */))
-const _acc4449e = () => interopDefault(import('..\\pages\\MyAccount.vue' /* webpackChunkName: "pages/MyAccount" */))
-const _7bf2fa60 = () => interopDefault(import('..\\pages\\MyAccount\\AdressBook.vue' /* webpackChunkName: "pages/MyAccount/AdressBook" */))
-const _441f2f18 = () => interopDefault(import('..\\pages\\MyAccount\\BillingDetails.vue' /* webpackChunkName: "pages/MyAccount/BillingDetails" */))
-const _fa6d6c16 = () => interopDefault(import('..\\pages\\MyAccount\\LoyaltyCard.vue' /* webpackChunkName: "pages/MyAccount/LoyaltyCard" */))
-const _323dca96 = () => interopDefault(import('..\\pages\\MyAccount\\MyNewsletter.vue' /* webpackChunkName: "pages/MyAccount/MyNewsletter" */))
-const _6fd073c8 = () => interopDefault(import('..\\pages\\MyAccount\\MyProfile.vue' /* webpackChunkName: "pages/MyAccount/MyProfile" */))
-const _0f9aa78e = () => interopDefault(import('..\\pages\\MyAccount\\MyReviews.vue' /* webpackChunkName: "pages/MyAccount/MyReviews" */))
-const _0d82ebf7 = () => interopDefault(import('..\\pages\\MyAccount\\OrderHistory.vue' /* webpackChunkName: "pages/MyAccount/OrderHistory" */))
-const _20bbc89a = () => interopDefault(import('..\\pages\\MyAccount\\ShippingDetails.vue' /* webpackChunkName: "pages/MyAccount/ShippingDetails" */))
-const _4885b282 = () => interopDefault(import('..\\pages\\Product.vue' /* webpackChunkName: "pages/Product" */))
-const _3fd32bec = () => interopDefault(import('..\\pages\\ResetPassword.vue' /* webpackChunkName: "" */))
-const _aa0d314c = () => interopDefault(import('..\\pages\\ResetPassword.vue' /* webpackChunkName: "pages/ResetPassword" */))
-const _3f24bb43 = () => interopDefault(import('..\\pages\\MyAccount.vue' /* webpackChunkName: "" */))
-const _762240d1 = () => interopDefault(import('..\\pages\\Product.vue' /* webpackChunkName: "" */))
-const _2db5090c = () => interopDefault(import('..\\pages\\Category.vue' /* webpackChunkName: "" */))
+const _6d8151be = () => interopDefault(import('..\\pages\\Category.vue' /* webpackChunkName: "pages/Category" */))
+const _59c9cdd5 = () => interopDefault(import('..\\pages\\Checkout.vue' /* webpackChunkName: "" */))
+const _a1327858 = () => interopDefault(import('..\\pages\\Checkout\\Billing.vue' /* webpackChunkName: "" */))
+const _4e1615df = () => interopDefault(import('..\\pages\\Checkout\\Payment.vue' /* webpackChunkName: "" */))
+const _7d2bed25 = () => interopDefault(import('..\\pages\\Checkout\\Shipping.vue' /* webpackChunkName: "" */))
+const _66b9b8cc = () => interopDefault(import('..\\pages\\Checkout\\ThankYou.vue' /* webpackChunkName: "" */))
+const _07068369 = () => interopDefault(import('..\\pages\\Checkout.vue' /* webpackChunkName: "pages/Checkout" */))
+const _55961642 = () => interopDefault(import('..\\pages\\Checkout\\Billing.vue' /* webpackChunkName: "pages/Checkout/Billing" */))
+const _17752f66 = () => interopDefault(import('..\\pages\\Checkout\\Payment.vue' /* webpackChunkName: "pages/Checkout/Payment" */))
+const _c6322f12 = () => interopDefault(import('..\\pages\\Checkout\\Shipping.vue' /* webpackChunkName: "pages/Checkout/Shipping" */))
+const _f31697c4 = () => interopDefault(import('..\\pages\\Checkout\\ThankYou.vue' /* webpackChunkName: "pages/Checkout/ThankYou" */))
+const _7534f54b = () => interopDefault(import('..\\pages\\ContactUs.vue' /* webpackChunkName: "pages/ContactUs" */))
+const _0cad146e = () => interopDefault(import('..\\pages\\Home.vue' /* webpackChunkName: "" */))
+const _3fa897fc = () => interopDefault(import('..\\pages\\Home.vue' /* webpackChunkName: "pages/Home" */))
+const _14e42fce = () => interopDefault(import('..\\pages\\MyAccount.vue' /* webpackChunkName: "pages/MyAccount" */))
+const _7139916d = () => interopDefault(import('..\\pages\\MyAccount\\AdressBook.vue' /* webpackChunkName: "pages/MyAccount/AdressBook" */))
+const _2080b196 = () => interopDefault(import('..\\pages\\MyAccount\\BillingDetails.vue' /* webpackChunkName: "pages/MyAccount/BillingDetails" */))
+const _8c0fe210 = () => interopDefault(import('..\\pages\\MyAccount\\LoyaltyCard.vue' /* webpackChunkName: "pages/MyAccount/LoyaltyCard" */))
+const _3e30b41a = () => interopDefault(import('..\\pages\\MyAccount\\MyNewsletter.vue' /* webpackChunkName: "pages/MyAccount/MyNewsletter" */))
+const _7b29efdf = () => interopDefault(import('..\\pages\\MyAccount\\MyProfile.vue' /* webpackChunkName: "pages/MyAccount/MyProfile" */))
+const _7aa65d5e = () => interopDefault(import('..\\pages\\MyAccount\\MyReviews.vue' /* webpackChunkName: "pages/MyAccount/MyReviews" */))
+const _87a67158 = () => interopDefault(import('..\\pages\\MyAccount\\OrderHistory.vue' /* webpackChunkName: "pages/MyAccount/OrderHistory" */))
+const _8fdeb194 = () => interopDefault(import('..\\pages\\MyAccount\\ShippingDetails.vue' /* webpackChunkName: "pages/MyAccount/ShippingDetails" */))
+const _648947c8 = () => interopDefault(import('..\\pages\\Product.vue' /* webpackChunkName: "pages/Product" */))
+const _7665bc0b = () => interopDefault(import('..\\pages\\ResetPassword.vue' /* webpackChunkName: "" */))
+const _ef413a12 = () => interopDefault(import('..\\pages\\ResetPassword.vue' /* webpackChunkName: "pages/ResetPassword" */))
+const _1a8a32e2 = () => interopDefault(import('..\\pages\\MyAccount.vue' /* webpackChunkName: "" */))
+const _1d21d7a0 = () => interopDefault(import('..\\pages\\Product.vue' /* webpackChunkName: "" */))
+const _1c02a18d = () => interopDefault(import('..\\pages\\Category.vue' /* webpackChunkName: "" */))
 
 const emptyFn = () => {}
 
@@ -47,241 +47,241 @@ export const routerOptions = {
 
   routes: [{
     path: "/Category",
-    component: _7b76e0de,
+    component: _6d8151be,
     name: "Category___en"
   }, {
     path: "/checkout",
-    component: _6b7c3554,
+    component: _59c9cdd5,
     name: "checkout___en",
     children: [{
       path: "billing",
-      component: _05b53c53,
+      component: _a1327858,
       name: "billing___en"
     }, {
       path: "payment",
-      component: _b736e344,
+      component: _4e1615df,
       name: "payment___en"
     }, {
       path: "shipping",
-      component: _1ea6f6f4,
+      component: _7d2bed25,
       name: "shipping___en"
     }, {
       path: "thank-you",
-      component: _4b8b5fa6,
+      component: _66b9b8cc,
       name: "thank-you___en"
     }]
   }, {
     path: "/Checkout",
-    component: _8d83e5b4,
+    component: _07068369,
     name: "Checkout___en",
     children: [{
       path: "Billing",
-      component: _4dfd9db6,
+      component: _55961642,
       name: "Checkout-Billing___en"
     }, {
       path: "Payment",
-      component: _77b08330,
+      component: _17752f66,
       name: "Checkout-Payment___en"
     }, {
       path: "Shipping",
-      component: _f241ac18,
+      component: _c6322f12,
       name: "Checkout-Shipping___en"
     }, {
       path: "ThankYou",
-      component: _706cf59b,
+      component: _f31697c4,
       name: "Checkout-ThankYou___en"
     }]
   }, {
     path: "/ContactUs",
-    component: _09eea32e,
+    component: _7534f54b,
     name: "ContactUs___en"
   }, {
     path: "/de",
-    component: _4ef5d926,
+    component: _0cad146e,
     name: "home___de"
   }, {
     path: "/Home",
-    component: _8b00b782,
+    component: _3fa897fc,
     name: "Home___en"
   }, {
     path: "/MyAccount",
-    component: _acc4449e,
+    component: _14e42fce,
     name: "MyAccount___en",
     children: [{
       path: "AdressBook",
-      component: _7bf2fa60,
+      component: _7139916d,
       name: "MyAccount-AdressBook___en"
     }, {
       path: "BillingDetails",
-      component: _441f2f18,
+      component: _2080b196,
       name: "MyAccount-BillingDetails___en"
     }, {
       path: "LoyaltyCard",
-      component: _fa6d6c16,
+      component: _8c0fe210,
       name: "MyAccount-LoyaltyCard___en"
     }, {
       path: "MyNewsletter",
-      component: _323dca96,
+      component: _3e30b41a,
       name: "MyAccount-MyNewsletter___en"
     }, {
       path: "MyProfile",
-      component: _6fd073c8,
+      component: _7b29efdf,
       name: "MyAccount-MyProfile___en"
     }, {
       path: "MyReviews",
-      component: _0f9aa78e,
+      component: _7aa65d5e,
       name: "MyAccount-MyReviews___en"
     }, {
       path: "OrderHistory",
-      component: _0d82ebf7,
+      component: _87a67158,
       name: "MyAccount-OrderHistory___en"
     }, {
       path: "ShippingDetails",
-      component: _20bbc89a,
+      component: _8fdeb194,
       name: "MyAccount-ShippingDetails___en"
     }]
   }, {
     path: "/Product",
-    component: _4885b282,
+    component: _648947c8,
     name: "Product___en"
   }, {
     path: "/reset-password",
-    component: _3fd32bec,
+    component: _7665bc0b,
     name: "reset-password___en"
   }, {
     path: "/ResetPassword",
-    component: _aa0d314c,
+    component: _ef413a12,
     name: "ResetPassword___en"
   }, {
     path: "/de/Category",
-    component: _7b76e0de,
+    component: _6d8151be,
     name: "Category___de"
   }, {
     path: "/de/checkout",
-    component: _6b7c3554,
+    component: _59c9cdd5,
     name: "checkout___de",
     children: [{
       path: "billing",
-      component: _05b53c53,
+      component: _a1327858,
       name: "billing___de"
     }, {
       path: "payment",
-      component: _b736e344,
+      component: _4e1615df,
       name: "payment___de"
     }, {
       path: "shipping",
-      component: _1ea6f6f4,
+      component: _7d2bed25,
       name: "shipping___de"
     }, {
       path: "thank-you",
-      component: _4b8b5fa6,
+      component: _66b9b8cc,
       name: "thank-you___de"
     }]
   }, {
     path: "/de/Checkout",
-    component: _8d83e5b4,
+    component: _07068369,
     name: "Checkout___de",
     children: [{
       path: "Billing",
-      component: _4dfd9db6,
+      component: _55961642,
       name: "Checkout-Billing___de"
     }, {
       path: "Payment",
-      component: _77b08330,
+      component: _17752f66,
       name: "Checkout-Payment___de"
     }, {
       path: "Shipping",
-      component: _f241ac18,
+      component: _c6322f12,
       name: "Checkout-Shipping___de"
     }, {
       path: "ThankYou",
-      component: _706cf59b,
+      component: _f31697c4,
       name: "Checkout-ThankYou___de"
     }]
   }, {
     path: "/de/ContactUs",
-    component: _09eea32e,
+    component: _7534f54b,
     name: "ContactUs___de"
   }, {
     path: "/de/Home",
-    component: _8b00b782,
+    component: _3fa897fc,
     name: "Home___de"
   }, {
     path: "/de/MyAccount",
-    component: _acc4449e,
+    component: _14e42fce,
     name: "MyAccount___de",
     children: [{
       path: "AdressBook",
-      component: _7bf2fa60,
+      component: _7139916d,
       name: "MyAccount-AdressBook___de"
     }, {
       path: "BillingDetails",
-      component: _441f2f18,
+      component: _2080b196,
       name: "MyAccount-BillingDetails___de"
     }, {
       path: "LoyaltyCard",
-      component: _fa6d6c16,
+      component: _8c0fe210,
       name: "MyAccount-LoyaltyCard___de"
     }, {
       path: "MyNewsletter",
-      component: _323dca96,
+      component: _3e30b41a,
       name: "MyAccount-MyNewsletter___de"
     }, {
       path: "MyProfile",
-      component: _6fd073c8,
+      component: _7b29efdf,
       name: "MyAccount-MyProfile___de"
     }, {
       path: "MyReviews",
-      component: _0f9aa78e,
+      component: _7aa65d5e,
       name: "MyAccount-MyReviews___de"
     }, {
       path: "OrderHistory",
-      component: _0d82ebf7,
+      component: _87a67158,
       name: "MyAccount-OrderHistory___de"
     }, {
       path: "ShippingDetails",
-      component: _20bbc89a,
+      component: _8fdeb194,
       name: "MyAccount-ShippingDetails___de"
     }]
   }, {
     path: "/de/Product",
-    component: _4885b282,
+    component: _648947c8,
     name: "Product___de"
   }, {
     path: "/de/reset-password",
-    component: _3fd32bec,
+    component: _7665bc0b,
     name: "reset-password___de"
   }, {
     path: "/de/ResetPassword",
-    component: _aa0d314c,
+    component: _ef413a12,
     name: "ResetPassword___de"
   }, {
     path: "/de/my-account/:pageName?",
-    component: _3f24bb43,
+    component: _1a8a32e2,
     name: "my-account___de"
   }, {
     path: "/de/p/:id/:slug",
-    component: _762240d1,
+    component: _1d21d7a0,
     name: "product___de"
   }, {
     path: "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    component: _2db5090c,
+    component: _1c02a18d,
     name: "category___de"
   }, {
     path: "/my-account/:pageName?",
-    component: _3f24bb43,
+    component: _1a8a32e2,
     name: "my-account___en"
   }, {
     path: "/p/:id/:slug",
-    component: _762240d1,
+    component: _1d21d7a0,
     name: "product___en"
   }, {
     path: "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-    component: _2db5090c,
+    component: _1c02a18d,
     name: "category___en"
   }, {
     path: "/",
-    component: _4ef5d926,
+    component: _0cad146e,
     name: "home___en"
   }],
 
