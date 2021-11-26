@@ -22,6 +22,8 @@
           :loading="productsLoading"
            linktext="most-loved"
            htitle="MOST LOVED 🖤" />
+
+        <Modal v-if="showModal" />
  
     <CardContainer :categoriesList="categoriesList"></CardContainer>
 
@@ -62,6 +64,8 @@ import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
 import LazyHydrate from "vue-lazy-hydration";
 import CardContainer from "~/components/CardContainer.vue";
 import { useCategory } from "@vue-storefront/shopify";
+import Modal from '~/components/Modal.vue';
+
 export default {
   name: "Home",
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -125,7 +129,8 @@ export default {
     CarouselBanner,
     LowerBanner,
     Banner,
-     Productgrid1,
+    Productgrid1,
+    Modal , 
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -233,6 +238,7 @@ export default {
           link: "/c/women/women-shoes-sandals",
         },
       ],
+      showModal : false , 
     };
   },
   methods: {
@@ -240,9 +246,15 @@ export default {
     toggleWishlist(index) {
       this.products[index].isInWishlist = !this.products[index].isInWishlist;
     },
+
+    modalPopup(){
+      console.log('pop up modal activated');
+      this.showModal = true; 
+    }
   },
   mounted() {
     console.log(this.categoriesMostLiked);
+    setTimeout( this.modalPopup , 5000);
   },
 };
 </script>
