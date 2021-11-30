@@ -253,9 +253,15 @@ export default {
 
     modalPopup(){
       console.log('pop up modal activated');
-      this.showModal = true; 
-
-      this.klaviyo();
+     /// this.showModal = true; 
+  
+     let a = window.location.href ;
+     if(!a.includes('utm_campaign')){
+          this.klaviyo();
+     }
+     else{
+       console.log('sorry no popup  for you')
+     }
     },
 
    async klaviyo(){
@@ -263,7 +269,27 @@ export default {
 
       var a='U5m47x';
       
-      if(window.klaviyoModulesObject&&(window.klaviyoModulesObject.companyId!=a||!window.klaviyoModulesObject.serverSideRendered)){console.warn('Cannot load klaviyo.js for different accounts on the same site. Skipping account "'+a+'". Active account is "'+window.klaviyoModulesObject.companyId+'"');return;};window._learnq=window._learnq||[];window.__klKey=window.__klKey||a;if(!window.klaviyoModulesObject){window._learnq.push(['account',a]);Object.defineProperty(window,'klaviyoModulesObject',{value:{companyId:a,loadTime:new Date(),loadedModules:{},loadedCss:{},serverSideRendered:true},enumerable:false});}var b={};function c(a){if(b[a])return;var c=document.createElement('script');c.type='text/javascript';c.async=true;c.src=a;document.head.appendChild(c);b[a]=true;}function d(a){var b=document.createElement('link');b.rel='stylesheet';b.href=a;document.head.appendChild(b);}function e(){var a=document.createElement('script');return 'noModule' in a;}function f(){try{new Function('import("")');return true;}catch(a){return false;}}var g=JSON.parse('{"static": {"js": ["https://static.klaviyo.com/onsite/js/fender_analytics.089eeb6786e293f1277f.js", "https://static.klaviyo.com/onsite/js/sharedUtils.67132abb8affde132c27.js", "https://static.klaviyo.com/onsite/js/static.efce0f8069ce0de75c2b.js"]}, "signup_forms": {"js": ["https://static.klaviyo.com/onsite/js/sharedUtils.67132abb8affde132c27.js", "https://static.klaviyo.com/onsite/js/sentry.3770b81f534eb4a7afe1.js", "https://static.klaviyo.com/onsite/js/vendors~signup_forms.8e849fcaf612cbc219e8.js", "https://static.klaviyo.com/onsite/js/signup_forms.fc98122d513f7482438a.js"]}}');if(e()||f())g=JSON.parse('{"static": {"js": ["https://static.klaviyo.com/onsite/js/fender_analytics.727f1b3efa048665bfdb.js", "https://static.klaviyo.com/onsite/js/sharedUtils.8640e1606247ed0a18ac.js", "https://static.klaviyo.com/onsite/js/static.ec58c6a230322abc39fd.js"]}, "signup_forms": {"js": ["https://static.klaviyo.com/onsite/js/sharedUtils.8640e1606247ed0a18ac.js", "https://static.klaviyo.com/onsite/js/sentry.3770b81f534eb4a7afe1.js", "https://static.klaviyo.com/onsite/js/vendors~signup_forms.0492ef2f712d8784c21d.js", "https://static.klaviyo.com/onsite/js/signup_forms.dd3b5f54dc1fd59a5e87.js"]}}');for(var h in g)if(g.hasOwnProperty(h)){var i=g[h];for(var j=0;j<i.js.length;j+=1)if(!window.klaviyoModulesObject.loadedModules[i.js[j]]){c(i.js[j]);window.klaviyoModulesObject.loadedModules[i.js[j]]=new Date().toISOString();}if(i.css)if(!window.klaviyoModulesObject.loadedCss[i.css]){d(i.css);window.klaviyoModulesObject.loadedCss[i.css]=new Date().toISOString();}}
+      if(window.klaviyoModulesObject&&(window.klaviyoModulesObject.companyId!=a||!window.klaviyoModulesObject.serverSideRendered)){console.warn('Cannot load klaviyo.js for different accounts on the same site. Skipping account "'+a+'". Active account is "'+window.klaviyoModulesObject.companyId+'"');return;};
+      
+      window._learnq=window._learnq||[];window.__klKey=window.__klKey||a;if(!window.klaviyoModulesObject){window._learnq.push(['account',a]);Object.defineProperty(window,'klaviyoModulesObject',{value:{companyId:a,loadTime:new Date(),loadedModules:{},loadedCss:{},serverSideRendered:true},enumerable:false});}
+      
+      var b={};
+      function c(a){if(b[a])return;var c=document.createElement('script');c.type='text/javascript';c.async=true;c.src=a;document.head.appendChild(c);b[a]=true;}
+        
+        function d(a){var b=document.createElement('link');b.rel='stylesheet';b.href=a;document.head.appendChild(b)}
+        
+        function e(){var a=document.createElement('script');return 'noModule' in a;}
+      
+      function f(){try{new Function('import("")');return true;}catch(a){return false;}}
+      
+      var g=JSON.parse('{"static": {"js": ["https://static.klaviyo.com/onsite/js/fender_analytics.089eeb6786e293f1277f.js", "https://static.klaviyo.com/onsite/js/sharedUtils.67132abb8affde132c27.js", "https://static.klaviyo.com/onsite/js/static.efce0f8069ce0de75c2b.js"]}, "signup_forms": {"js": ["https://static.klaviyo.com/onsite/js/sharedUtils.67132abb8affde132c27.js", "https://static.klaviyo.com/onsite/js/sentry.3770b81f534eb4a7afe1.js", "https://static.klaviyo.com/onsite/js/vendors~signup_forms.8e849fcaf612cbc219e8.js", "https://static.klaviyo.com/onsite/js/signup_forms.fc98122d513f7482438a.js"]}}');
+      if(e()||f())
+      g=JSON.parse('{"static": {"js": ["https://static.klaviyo.com/onsite/js/fender_analytics.727f1b3efa048665bfdb.js", "https://static.klaviyo.com/onsite/js/sharedUtils.8640e1606247ed0a18ac.js", "https://static.klaviyo.com/onsite/js/static.ec58c6a230322abc39fd.js"]}, "signup_forms": {"js": ["https://static.klaviyo.com/onsite/js/sharedUtils.8640e1606247ed0a18ac.js", "https://static.klaviyo.com/onsite/js/sentry.3770b81f534eb4a7afe1.js", "https://static.klaviyo.com/onsite/js/vendors~signup_forms.0492ef2f712d8784c21d.js", "https://static.klaviyo.com/onsite/js/signup_forms.dd3b5f54dc1fd59a5e87.js"]}}');
+      
+      for(var h in g)
+        if(g.hasOwnProperty(h)){
+          var i=g[h];
+           for(var j=0;j<i.js.length;j+=1)if(!window.klaviyoModulesObject.loadedModules[i.js[j]]){c(i.js[j]);window.klaviyoModulesObject.loadedModules[i.js[j]]=new Date().toISOString();}if(i.css)if(!window.klaviyoModulesObject.loadedCss[i.css]){d(i.css);window.klaviyoModulesObject.loadedCss[i.css]=new Date().toISOString();}}
 
     },
 
